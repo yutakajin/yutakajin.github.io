@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskChute Automation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" style="max-width: 800px;">
+        <h1>TaskChute Automation</h1>
+        <p class="description">毎日のタスクシュート記録を自動でエクスポート・保存します。</p>
+
+        <div id="status-message"></div>
+
+        <div class="card session-card">
+            <h2>1. ログイン設定</h2>
+            <p style="font-size: 0.9em; margin-bottom: 1rem; color: #94a3b8;">
+                下のボタンを押してブラウザを開き、TaskChute Cloudにログインしてください。<br>
+                完了したらブラウザを閉じてください（セッションが保存されます）。
+            </p>
+            <button id="login-btn" class="btn-secondary">ブラウザを開いてログインする</button>
+        </div>
+
+        <div class="card schedule-card">
+            <h2>2. スケジュール登録</h2>
+            <form id="schedule-form">
+                <div class="form-group">
+                    <label for="url">対象URL (viewIdを含むURL)</label>
+                    <p style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.5rem; margin-top: -0.25rem;">
+                        ※ <code>viewId=...</code> までのURLを入力してください。<br>
+                        ※ 日付パラメータ (<code>&from=...&to=...</code>) は自動で付与されるため不要です。
+                    </p>
+                    <input type="text" id="url" value="" placeholder="https://taskchute.cloud/taskchute?viewId=..."
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="output-dir">保存先フォルダ (絶対パス)</label>
+                    <input type="text" id="output-dir" value=""
+                        placeholder="例: /Users/username/Documents/TaskChuteOutput" required>
+                </div>
+
+                <div class="form-group">
+                    <label>実行スケジュール (毎日)</label>
+                    <input type="time" id="schedule-time" required value="03:00"
+                        style="color-scheme: dark; width: 100%; padding: 0.75rem; background-color: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem; color: white; font-size: 1rem;">
+                </div>
+
+                <div class="form-group">
+                    <label for="date-mode">対象日付</label>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <select id="date-mode"
+                            style="flex: 1; padding: 0.75rem; background-color: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem; color: white; font-size: 1rem;">
+                            <option value="today">今日</option>
+                            <option value="yesterday" selected>昨日</option>
+                            <option value="tomorrow">明日</option>
+                            <option value="specific">指定日</option>
+                        </select>
+                        <input type="date" id="specific-date"
+                            style="display: none; padding: 0.75rem; background-color: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem; color: white; font-size: 1rem; color-scheme: dark;">
+                    </div>
+                </div>
+
+                <!-- Hidden inputs for default values -->
+                <input type="hidden" id="frequency" value="daily">
+                <input type="hidden" id="action-screen" value="true">
+                <input type="hidden" id="action-note" value="false">
+
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <button type="submit" class="btn-primary" style="flex: 1;">スケジュールに追加</button>
+                    <button type="button" id="execute-now-btn" class="btn-secondary"
+                        style="flex: 1; background-color: #10b981; color: white; border: none;">今すぐ実行</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="card jobs-card">
+            <h2>登録済みスケジュール</h2>
+            <div id="jobs-list">
+                <!-- Jobs will be rendered here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

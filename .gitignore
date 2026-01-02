@@ -1,0 +1,16 @@
+node_modules
+dist
+user_data
+puppeteer_profile
+.env
+.DS_Store
+*.log
+db.json
+login_state.json
+debug_*
+verify_*
+image_gen_app/
+ios_health_app/
+auto_cut_silence/
+*.mov
+*.gs

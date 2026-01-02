@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskChute Cloud 2 Exporter - タスクシュートを自動でPDF保存</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --bg: #0f172a;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --card-bg: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Hero Section */
+        header {
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-download:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+        }
+
+        /* Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Steps */
+        .steps {
+            background-color: rgba(255, 255, 255, 0.03);
+            padding: 4rem 0;
+            margin-top: 2rem;
+            border-radius: 1rem;
+        }
+
+        .step-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+
+        .step-num {
+            background-color: var(--primary);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 4rem 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            border-bottom: 1px dotted;
+        }
+
+        .note {
+            background-color: rgba(245, 158, 11, 0.1);
+            color: #fbbf24;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>TaskChute Exporter</h1>
+            <p class="subtitle">
+                TaskChute Cloud 2の記録を、見やすいPDFで自動保存。<br>
+                タスク詳細（ノート）もまとめて出力します。
+            </p>
+            <a href="https://github.com/ogipooh/taskchute-exporter/releases/latest" class="btn-download">
+                Mac版をダウンロード (無料)
+            </a>
+            <div class="note" style="max-width: 600px; margin: 2rem auto 0;">
+                ※ Appleシリコン（M1/M2/M3）搭載Mac専用です。<br>
+                ※ 初回起動時は「右クリック」→「開く」が必要です。
+            </div>
+        </div>
+    </header>
+
+    <section class="container features">
+        <div class="card">
+            <h3>📊 画面そのままPDF</h3>
+            <p>タスクシュートの1日の記録を、見たままの美しさでA4サイズのPDFに保存します。振り返りに最適です。</p>
+        </div>
+        <div class="card">
+            <h3>📝 ノートも出力</h3>
+            <p>タスクに書いたメモ（ノート）も自動で抽出し、別のPDFとして保存。日記やログの保存に役立ちます。</p>
+        </div>
+        <div class="card">
+            <h3>🤖 自動実行＆常駐</h3>
+            <p>毎日決まった時間に自動で書き出し。アプリはメニューバーに常駐するので邪魔になりません。</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="steps">
+            <div class="container" style="max-width: 700px;">
+                <h2 style="text-align: center; margin-bottom: 3rem;">3ステップで開始</h2>
+
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <div>
+                        <h3>アプリをダウンロード</h3>
+                        <p>上のボタンからインストーラー(.dmg)をダウンロードし、アプリをApplicationsフォルダに入れてください。</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <div>
+                        <h3>ログイン設定</h3>
+                        <p>アプリを起動し、「1. ログイン設定」ボタンを押してTaskChute Cloud 2にログインします。一度だけ行えばOKです。</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <div>
+                        <h3>実行・スケジュール</h3>
+                        <p>ご自身のTaskChuteのURLを入力し、「スケジュールに追加」を押すだけ。後は毎日自動でフォルダにPDFが溜まります。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TaskChute Exporter Project. Unofficial Tool.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">
+                This software is not affiliated with TaskChute Cloud.<br>
+                GitHub: <a href="https://github.com/ogipooh/taskchute-exporter">View Source</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

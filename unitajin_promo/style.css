@@ -369,6 +369,7 @@ a:hover {
     line-height: 1.5;
     margin-bottom: 10px;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -477,20 +478,105 @@ a:hover {
 @media (max-width: 768px) {
     .main-layout {
         flex-direction: column;
+        padding: 20px 15px;
+        gap: 30px;
     }
 
+    /* Move sidebar to bottom on mobile */
     .sidebar {
-        display: none;
+        display: block;
+        width: 100%;
+        order: 2;
     }
 
+    .main-content {
+        order: 1;
+    }
+
+    /* Header adjustments */
     .amazon-header {
-        flex-direction: column;
-        height: auto;
-        gap: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60px;
+        padding: 10px 15px;
+    }
+
+    .brand-logo {
+        font-size: 20px;
     }
 
     .header-desc {
         display: none;
-        /* Hide on mobile to save space */
+    }
+
+    .header-right {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    /* Recommendation Banner Mobile */
+    .recommendation-banner {
+        flex-direction: column;
+        padding: 20px;
+        max-height: none;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .rec-img {
+        width: 100%;
+        height: 200px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .rec-title {
+        font-size: 20px;
+    }
+
+    .rec-meta {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Sidebar adjustments for mobile */
+    .sidebar-section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .sidebar-title {
+        display: inline-block;
+        border-bottom: 2px solid var(--color-header);
+        padding-bottom: 5px;
+    }
+
+    /* Horizontal scroll for authors on mobile? 
+       Or just a grid/flex-wrap list */
+    .sidebar-authors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .sidebar-author-row {
+        background-color: white;
+        border: 1px solid #eee;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .amazon-grid {
+        gap: 20px;
     }
 }

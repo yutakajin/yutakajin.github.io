@@ -2,8 +2,8 @@ name: Daily Unitajin Update
 
 on:
   schedule:
-    # Runs at 9:00 AM JST (0:00 UTC) every day
-    - cron: '0 0 * * *'
+    # Runs at 0:00 JST (15:00 UTC) every day
+    - cron: '0 15 * * *'
   workflow_dispatch: # Allows manual trigger
 
 jobs:

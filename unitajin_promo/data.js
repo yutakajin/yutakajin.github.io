@@ -1,4 +1,13 @@
 const articles = [
+    {
+    "title": "豊かさとは「多い」ことではない。",
+    "url": "https://note.com/coachingoffice/n/n7fac6a083be5?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/251919906/rectangle_large_type_2_a8e1526ede9e25825697164ac814aa55.png?width=1280",
+    "author": "しろうず＠ライフバラン…",
+    "date": "2026年2月15日 15:47",
+    "tags": []
+},
+    
 
 
     {

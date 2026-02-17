@@ -3,12 +3,14 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 const { Client } = require('@notionhq/client');
+const driveUploader = require('./drive_uploader');
 
 // 設定
 const TCC2_BASE_URL = 'https://taskchute.cloud'; // Base URL
 const OUTPUT_DIR = path.join(__dirname, 'output');
 const NOTION_API_KEY = process.env.NOTION_API_KEY;
 const NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID;
+// const NOTEBOOKLM_NOTEBOOK_URL = process.env.NOTEBOOKLM_NOTEBOOK_URL; // Deprecated in favor of creating new notebooks
 
 // Output directory helper
 function ensureDir(dir) {
@@ -25,7 +27,7 @@ module.exports = async function runExport(options = {}) {
     // Default options
     const config = {
         saveScreenshot: true, // Legacy fallback
-        actions: options.actions || { screen: true, note: true, notion: false },
+        actions: options.actions || { screen: true, note: true, notion: false, notebooklm: false },
         dateMode: options.dateMode || 'today',
         specificDate: options.specificDate, // Add this line
         outputDir: options.outputDir || DEFAULT_OUTPUT_DIR,
@@ -48,11 +50,25 @@ module.exports = async function runExport(options = {}) {
         ? path.join(process.env.USER_DATA_PATH, 'puppeteer_profile')
         : path.join(__dirname, 'user_data');
 
+    console.log(`Using User Data Dir: ${userDataDir}`);
+
     const browser = await puppeteer.launch({
         headless: false,
-        defaultViewport: null, // ウィンドウサイズに合わせる
-        args: ['--start-maximized'], // 最大化して起動
-        userDataDir: userDataDir // ログイン情報を保存するフォルダを指定
+        executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+        defaultViewport: null,
+        ignoreDefaultArgs: ['--enable-automation'], // Hide automation banner
+        args: [
+            '--start-maximized',
+            '--disable-blink-features=AutomationControlled', // Mask automation
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-infobars',
+            '--window-position=0,0',
+            '--ignore-certificate-errors',
+            '--ignore-certificate-errors-spki-list',
+            '--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        ],
+        userDataDir: userDataDir
     });
 
     const pages = await browser.pages();
@@ -60,6 +76,8 @@ module.exports = async function runExport(options = {}) {
 
     try {
         console.log('TaskChuteCloud2にアクセスします。');
+        // ... (rest of function)
+
 
         // Calculate Target URL
         let baseUrlString = 'https://taskchute.cloud/users/main';
@@ -269,6 +287,23 @@ module.exports = async function runExport(options = {}) {
 
                 console.log(`[SUCCESS] 画面PDF保存完了: ${pdfPath}`);
 
+                // Upload to Google Drive if Notion enabled (or if standalone upload requested)
+                // We assume if Notion is enabled, we want to upload to Drive to link it.
+                // Or maybe we should always upload if configured?
+                // For now, let's upload if Notion action is on, OR if we just want to.
+                // Let's stick to the plan: Upload if screen=true, and pass link to Notion if notion=true.
+
+                if (config.actions.notion) {
+                    try {
+                        console.log('Google DriveへPDFをアップロード中...');
+                        const driveLink = await driveUploader.uploadFile(pdfPath, `TaskChute_${dateFileStr}.pdf`, 'application/pdf');
+                        config.driveLink = driveLink; // Store for Notion step
+                        console.log(`[SUCCESS] Drive Upload: ${driveLink}`);
+                    } catch (uploadError) {
+                        console.error(`[WARN] Google Drive upload failed: ${uploadError.message}`);
+                    }
+                }
+
             } catch (e) {
                 console.error(`[ERROR] 画面PDF保存失敗: ${e.message}`);
             }
@@ -419,7 +454,22 @@ module.exports = async function runExport(options = {}) {
 
         // 4. Save to Notion
         if (config.actions.notion) {
-            await saveToNotion(extractedData.tasks, dateFileStr);
+            await saveToNotion(extractedData.tasks, dateFileStr, config.driveLink);
+        }
+
+        // 5. Upload to NotebookLM
+        if (config.actions.notebooklm) {
+            // Use screen PDF if available, otherwise note PDF (fallback)
+            // We should probably prefer the screen PDF as it's the "Daily Log" visual.
+            const pdfPath = config.actions.screen
+                ? path.join(config.outputDir, `view_${dateFileStr}.pdf`)
+                : path.join(config.outputDir, `tcc2_notes_${dateFileStr}.pdf`);
+
+            if (fs.existsSync(pdfPath)) {
+                await uploadToNotebookLM(page, pdfPath);
+            } else {
+                console.warn('[WARN] NotebookLMへのアップロードをスキップ: PDFファイルが見つかりません');
+            }
         }
 
     } catch (error) {
@@ -434,7 +484,7 @@ module.exports = async function runExport(options = {}) {
 };
 
 
-async function saveToNotion(tasks, dateStr) {
+async function saveToNotion(tasks, dateStr, driveLink) {
     if (!NOTION_API_KEY || !NOTION_DATABASE_ID) {
         console.log('Notionの認証情報が設定されていないため、Notionへの保存はスキップします。(.envを確認してください)');
         return;
@@ -480,6 +530,29 @@ async function saveToNotion(tasks, dateStr) {
             });
         }
 
+        // Add PDF Link if available
+        if (driveLink) {
+            children.push({
+                object: 'block',
+                type: 'heading_2',
+                heading_2: {
+                    rich_text: [{ type: 'text', text: { content: 'PDF Archive' } }]
+                }
+            });
+            children.push({
+                object: 'block',
+                type: 'bookmark',
+                bookmark: {
+                    url: driveLink
+                }
+            });
+            children.push({
+                object: 'block',
+                type: 'divider',
+                divider: {}
+            });
+        }
+
         const response = await notion.pages.create({
             parent: { database_id: NOTION_DATABASE_ID },
             properties: {
@@ -504,5 +577,188 @@ async function saveToNotion(tasks, dateStr) {
         console.log(`Notionに保存しました: ${response.url}`);
     } catch (error) {
         console.error('Notionへの保存中にエラーが発生しました:', error.body || error);
+    }
+}
+
+async function uploadToNotebookLM(page, pdfPath) {
+    console.log('NotebookLMへのアップロードを開始します (新規ノートブック作成)...');
+    try {
+        await page.goto('https://notebooklm.google.com/', { waitUntil: 'networkidle0', timeout: 60000 });
+
+        // 1. Check for "New Notebook" button first (Success indicator)
+        const newNotebookBtnExists = await page.evaluate(() => {
+            const elements = Array.from(document.querySelectorAll('div, button, span'));
+            // Look for "New notebook" or "新しいノートブック" strictly in relevant elements
+            // Also excluding hidden elements might be good, but innerText usually handles that.
+            return elements.some(el =>
+                (el.innerText && (el.innerText.includes('New notebook') || el.innerText.includes('新しいノートブック'))) ||
+                (el.ariaLabel && (el.ariaLabel.includes('New notebook') || el.ariaLabel.includes('新しいノートブック')))
+            );
+        });
+
+        if (newNotebookBtnExists) {
+            console.log('ログイン済みを確認しました (新規作成ボタン検出)。');
+        } else {
+            // Only check for login page if we didn't find the success indicator
+            const isLoginPage = await page.evaluate(() => {
+                return document.body.innerText.includes('Sign in') || document.body.innerText.includes('ログイン');
+            });
+
+            if (isLoginPage) {
+                console.log('[WARN] NotebookLMのログインが必要です。ブラウザでログインしてください。完了を待機します(最大3分)...');
+
+                // Wait loop
+                for (let i = 0; i < 36; i++) {
+                    await new Promise(r => setTimeout(r, 5000));
+
+                    const canSeeNewBtn = await page.evaluate(() => {
+                        const elements = Array.from(document.querySelectorAll('div, button, span'));
+                        return elements.some(el =>
+                            (el.innerText && (el.innerText.includes('New notebook') || el.innerText.includes('新しいノートブック'))) ||
+                            (el.ariaLabel && (el.ariaLabel.includes('New notebook') || el.ariaLabel.includes('新しいノートブック')))
+                        );
+                    });
+
+                    if (canSeeNewBtn) {
+                        console.log('ログイン完了を検出しました。');
+                        break;
+                    }
+                }
+            }
+        }
+
+        console.log('「新しいノートブック」ボタンを探しています...');
+
+        // 1. Click "New Notebook"
+        const created = await page.evaluate(async () => {
+            // Helper to match text
+            const containsText = (el, text) => el.innerText && el.innerText.includes(text);
+
+            // Potential selectors for the "New Notebook" card/button
+            const elements = Array.from(document.querySelectorAll('div, button, span'));
+            // Look for "New notebook" or "新しいノートブック"
+            const newBtn = elements.find(el =>
+                (containsText(el, 'New notebook') || containsText(el, '新しいノートブック') || containsText(el, 'Create')) &&
+                el.role !== 'dialog'
+            );
+
+            if (newBtn) {
+                newBtn.click();
+                return true;
+            }
+            return false;
+        });
+
+        if (!created) {
+            console.log('テキストでのボタン検出に失敗しました。アイコンまたは位置でのクリックを試みます...');
+            // Material Design "New" often has aria-label
+            const ariaBtn = await page.$('[aria-label*="New"], [aria-label*="Create"], [aria-label*="新しい"], [aria-label*="作成"]');
+            if (ariaBtn) {
+                await ariaBtn.click();
+            } else {
+                console.error('[ERROR] 新規作成ボタンが見つかりませんでした。');
+                return;
+            }
+        }
+
+        // Wait for navigation to the new notebook
+        await new Promise(r => setTimeout(r, 5000));
+
+        // 2. Set Title
+        // Use local time for the title
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, '0');
+        const d = String(now.getDate()).padStart(2, '0');
+        const newTitle = `TaskChute Log ${y}-${m}-${d}`;
+
+        console.log(`ノートブックのタイトルを "${newTitle}" に設定します...`);
+
+        await page.evaluate((title) => {
+            const titleInput = document.querySelector('input[placeholder="Untitled notebook"], input[placeholder="無題のノートブック"], textarea[aria-label="Notebook title"]');
+            if (titleInput) {
+                titleInput.value = title;
+                titleInput.dispatchEvent(new Event('input', { bubbles: true }));
+                titleInput.dispatchEvent(new Event('change', { bubbles: true }));
+                titleInput.blur();
+            }
+        }, newTitle);
+
+        // 3. Upload File
+        console.log('ファイルアップロード場所を探しています...');
+
+        // Wait for page stabilization
+        await new Promise(r => setTimeout(r, 2000));
+
+        let fileInput = await page.$('input[type="file"]');
+
+        if (!fileInput) {
+            // Try to find "Add source" button again inside the notebook
+            const addedSource = await page.evaluate(() => {
+                const buttons = Array.from(document.querySelectorAll('button, div[role="button"]'));
+                // Expanded check including aria-label and "Upload" text
+                const addSourceBtn = buttons.find(b =>
+                    (b.innerText && (b.innerText.includes('Add source') || b.innerText.includes('ソースを追加') || b.innerText.includes('PDF') || b.innerText.includes('アップロード'))) ||
+                    (b.ariaLabel && (b.ariaLabel.includes('Add source') || b.ariaLabel.includes('ソースを追加') || b.ariaLabel.includes('Upload')))
+                );
+                if (addSourceBtn) {
+                    addSourceBtn.click();
+                    return true;
+                }
+                return false;
+            });
+
+            if (addedSource) {
+                await new Promise(r => setTimeout(r, 2000));
+                fileInput = await page.$('input[type="file"]');
+            }
+        }
+
+        if (fileInput) {
+            console.log(`Uploading PDF: ${pdfPath}`);
+            await fileInput.uploadFile(pdfPath);
+
+            console.log('Waiting for upload processing...');
+            await new Promise(r => setTimeout(r, 15000));
+            console.log('[SUCCESS] NotebookLMへのアップロード完了 (待機終了)');
+        } else {
+            // Try to click "Upload" text as last resort
+            console.log('アップロードボタンをテキスト検索でクリックを試みます...');
+            const clicked = await page.evaluate(() => {
+                const candidates = Array.from(document.querySelectorAll('div, span, button, p'));
+                const target = candidates.find(el =>
+                    el.innerText && (el.innerText.includes('ファイルをアップロード') || el.innerText.includes('Upload file'))
+                );
+                if (target) {
+                    target.click();
+                    return true;
+                }
+                return false;
+            });
+
+            if (clicked) {
+                await new Promise(r => setTimeout(r, 2000));
+                fileInput = await page.$('input[type="file"]');
+                if (fileInput) {
+                    await fileInput.uploadFile(pdfPath);
+                    console.log('[SUCCESS] テキストクリック後にアップロード開始');
+                    await new Promise(r => setTimeout(r, 15000));
+                    return;
+                }
+            }
+
+            console.error('[ERROR] NotebookLMのファイルアップロード入力箇所が見つかりませんでした。');
+            const debugPath = 'debug_upload_fail.png';
+            await page.screenshot({ path: debugPath, fullPage: true });
+            console.log(`デバッグ用スクリーンショットを保存しました: ${debugPath}`);
+        }
+
+    } catch (e) {
+        console.error(`[ERROR] NotebookLM Upload failed: ${e.message}`);
+        try {
+            const debugPath = 'debug_crash.png';
+            await page.screenshot({ path: debugPath });
+            console.log(`クラッシュ時スクリーンショット: ${debugPath}`);
+        } catch (err) { }
     }
 }

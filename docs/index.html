@@ -52,6 +52,8 @@
             background: linear-gradient(to right, #60a5fa, #a78bfa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
+            /* Standard property */
         }
 
         .subtitle {
@@ -92,6 +94,7 @@
             padding: 2rem;
             border-radius: 1rem;
             border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
         }
 
         .card h3 {
@@ -167,11 +170,13 @@
                 TaskChute Cloud 2の記録を、見やすいPDFで自動保存。<br>
                 タスク詳細（ノート）もまとめて出力します。
             </p>
-            <a href="https://github.com/ogipooh/taskchute-exporter/releases/latest" class="btn-download">
+            <!-- Google Drive Link -->
+            <a href="https://drive.google.com/file/d/1SkWY-oblh7COIHSOF07g7_ZJ_QViwmTf/view?usp=sharing"
+                class="btn-download" target="_blank">
                 Mac版をダウンロード (無料)
             </a>
             <div class="note" style="max-width: 600px; margin: 2rem auto 0;">
-                ※ Appleシリコン（M1/M2/M3）搭載Mac専用です。<br>
+                ※ Appleシリコン搭載Mac専用です。<br>
                 ※ 初回起動時は「右クリック」→「開く」が必要です。
             </div>
         </div>
@@ -221,6 +226,19 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="container" style="margin-top: 4rem; margin-bottom: 4rem;">
+        <div
+            style="background-color: rgba(255,255,255,0.03); padding: 2rem; border-radius: 1rem; text-align: center; border: 1px solid rgba(255,255,255,0.05);">
+            <h4 style="margin-bottom: 1rem; color: #94a3b8;">⚠️ 免責事項・サポートについて</h4>
+            <p style="font-size: 0.9rem; color: #94a3b8; line-height: 1.8;">
+                本ソフトウェアのダウンロードおよび使用に関するトラブルや損害について、<br>
+                開発者は一切の責任を負いません。自己責任でご利用ください。<br>
+                また、個人開発ツールのため、<strong>不具合の修正や機能改善のご要望には原則としてお応えできません。</strong><br>
+                あらかじめご了承いただけますようお願いいたします。
+            </p>
         </div>
     </section>
 

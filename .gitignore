@@ -10,7 +10,7 @@ login_state.json
 debug_*
 verify_*
 image_gen_app/
-ios_health_app/
+
 auto_cut_silence/
 *.mov
 *.gs

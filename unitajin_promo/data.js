@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "逆算で計画を立てるとき 【ユタカジン】",
+    "url": "https://note.com/zakky_tc/n/n387ebac7031f?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/252315728/rectangle_large_type_2_f3b3112f20c717b10a5d088273e097cc.png?width=1280",
+    "author": "Zakky",
+    "date": "2026年2月17日 00:07",
+    "tags": []
+},
+    
+    {
     "title": "豊かさとは「多い」ことではない。",
     "url": "https://note.com/coachingoffice/n/n7fac6a083be5?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/251919906/rectangle_large_type_2_a8e1526ede9e25825697164ac814aa55.png?width=1280",

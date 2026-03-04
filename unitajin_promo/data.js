@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "歯磨きのように「タスクシュート」を～3ヶ月の伴走が生む、一生モノの習慣化【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/n4347caadb617?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/256459068/rectangle_large_type_2_d2abcddae768b06fbc4ecbb0ebe2300e.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年3月4日 09:54",
+    "tags": []
+},
+    
+    {
     "title": "初心忘るべからず？",
     "url": "https://note.com/fooglebird/n/nc9341ad93227?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/256232877/rectangle_large_type_2_086a9da9c723ca77c0a8d50d7c9a15bf.jpg?width=1280",

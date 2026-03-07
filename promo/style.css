@@ -482,15 +482,15 @@ a:hover {
         gap: 30px;
     }
 
-    /* Move sidebar to bottom on mobile */
+    /* Move sidebar to top on mobile */
     .sidebar {
         display: block;
         width: 100%;
-        order: 2;
+        order: 1;
     }
 
     .main-content {
-        order: 1;
+        order: 2;
     }
 
     /* Header adjustments */

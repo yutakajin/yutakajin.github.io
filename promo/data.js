@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "時間を「長く感じる」か「短く感じる」かは、真の問題ではない【ユタカジン】",
+    "url": "https://note.com/shingotanaka/n/n136124451025?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/257133839/rectangle_large_type_2_feb773d857185ec76ec59e8ef6413dc9.png?width=1280",
+    "author": "田中 新吾",
+    "date": "2026年3月7日 09:09",
+    "tags": []
+},
+    
+    {
     "title": "歯磨きのように「タスクシュート」を～3ヶ月の伴走が生む、一生モノの習慣化【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n4347caadb617?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/256459068/rectangle_large_type_2_d2abcddae768b06fbc4ecbb0ebe2300e.png?width=1280",

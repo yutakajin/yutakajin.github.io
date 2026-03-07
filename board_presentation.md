@@ -4,7 +4,7 @@
 タスクシュート協会の公式マガジン「ユタカジン」の記事を、より多くの非会員・潜在層に届けるための**プロモーション専用サイト**を構築しました。
 従来のNote上の記事を自動で集約し、独自の世界観で表現することで、協会のブランディング強化と新規ファンの獲得を目指します。
 
-**URL:** [https://yutakajin.github.io/unitajin_promo/](https://yutakajin.github.io/unitajin_promo/)
+**URL:** [https://yutakajin.github.io/promo/](https://yutakajin.github.io/promo/)
 
 ---
 

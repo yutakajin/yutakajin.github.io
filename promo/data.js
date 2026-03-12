@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "【ユタカジン】アフター・ザ・桃太郎",
+    "url": "https://note.com/ogipooh/n/neae0a6dca8f5?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/258625161/rectangle_large_type_2_c6b490c2ccd28a2711992575755659e2.png?width=1280",
+    "author": "おぎ",
+    "date": "2026年3月12日 14:08",
+    "tags": []
+},
+    
+    {
     "title": "「時間がない」は錯覚かもしれない―見通しを取り戻すための3ヶ月の実験【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n005b50996707?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/258310297/rectangle_large_type_2_ac144df7eede62c0d1c9853fb77371b6.png?width=1280",

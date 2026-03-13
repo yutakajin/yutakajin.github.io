@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "AIを見積もりに使ってみた【ユタカジン】",
+    "url": "https://note.com/tomorin_task/n/nb6f74f2010f2?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/258685594/rectangle_large_type_2_6a6bd51d43d8a8d07ef5a8ec9f360a2f.png?width=1280",
+    "author": "ともりん",
+    "date": "2026年3月12日 23:34",
+    "tags": []
+},
+    
+    {
     "title": "【ユタカジン】アフター・ザ・桃太郎",
     "url": "https://note.com/ogipooh/n/neae0a6dca8f5?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/258625161/rectangle_large_type_2_c6b490c2ccd28a2711992575755659e2.png?width=1280",

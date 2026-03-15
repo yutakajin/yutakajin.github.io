@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "ほどほどの満足と、ときどきのスパイス",
+    "url": "https://note.com/coachingoffice/n/nadec3c885894?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/259241631/rectangle_large_type_2_ef6ae3d19ea74a5a69bda311407d1cd8.png?width=1280",
+    "author": "しろうず＠ライフバランス × タスク管理コーチ",
+    "date": "2026年3月15日 02:27",
+    "tags": []
+},
+    
+    {
     "title": "AIを見積もりに使ってみた【ユタカジン】",
     "url": "https://note.com/tomorin_task/n/nb6f74f2010f2?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/258685594/rectangle_large_type_2_6a6bd51d43d8a8d07ef5a8ec9f360a2f.png?width=1280",

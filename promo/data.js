@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "時間を味わうために、書く",
+    "url": "https://note.com/cyblog/n/n5859af0288b8?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/259702268/rectangle_large_type_2_35b95d5a13e948fbcd90155d83306d4d.png?width=1280",
+    "author": "大橋 悦夫",
+    "date": "2026年3月16日 15:46",
+    "tags": []
+},
+    
+    {
     "title": "ほどほどの満足と、ときどきのスパイス",
     "url": "https://note.com/coachingoffice/n/nadec3c885894?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/259241631/rectangle_large_type_2_ef6ae3d19ea74a5a69bda311407d1cd8.png?width=1280",

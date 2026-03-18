@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "見通しを壊す「気合」の罠と、未来の自分のために敷く一本のレール【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/na3f7647f4f4e?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/260133464/rectangle_large_type_2_d2447e6641e286f7622f4ed368b66074.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年3月18日 10:03",
+    "tags": []
+},
+    
+    {
     "title": "時間を味わうために、書く",
     "url": "https://note.com/cyblog/n/n5859af0288b8?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/259702268/rectangle_large_type_2_35b95d5a13e948fbcd90155d83306d4d.png?width=1280",

@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "締切が嫌いだった私へ｜「期限ギリギリ」から脱却できた理由",
+    "url": "https://note.com/sugamari_spirit/n/na60319e76642?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/260369050/rectangle_large_type_2_4496a36cfd0338dfa9549f853fc133ae.png?width=1280",
+    "author": "sugamari💫タスクシュート認定トレーナー",
+    "date": "2026年3月19日 08:33",
+    "tags": []
+},
+    
+    {
     "title": "見通しを壊す「気合」の罠と、未来の自分のために敷く一本のレール【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/na3f7647f4f4e?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/260133464/rectangle_large_type_2_d2447e6641e286f7622f4ed368b66074.png?width=1280",

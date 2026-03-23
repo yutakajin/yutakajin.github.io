@@ -1,5 +1,22 @@
 const articles = [
     {
+    "title": "時間を管理するのではなく『時間を生きる』 【ユタカジン】",
+    "url": "https://note.com/zakky_tc/n/n3d82ebb1e5d8?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/261585495/rectangle_large_type_2_3fa328750aea16fc5c22d8cddd471f41.png?width=1280",
+    "author": "Zakky",
+    "date": "2026年3月23日 15:12",
+    "tags": []
+},
+    {
+    "title": "「手が止まってしまう」ときの処方箋【ユタカジン】",
+    "url": "https://note.com/arihit0/n/nef8e9858c821?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/261466587/rectangle_large_type_2_f9d102ecffeafe61ab0520bda29d978d.png?width=1280",
+    "author": "ありひと",
+    "date": "2026年3月23日 07:47",
+    "tags": []
+},
+    
+    {
     "title": "締切が嫌いだった私へ｜「期限ギリギリ」から脱却できた理由",
     "url": "https://note.com/sugamari_spirit/n/na60319e76642?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/260369050/rectangle_large_type_2_4496a36cfd0338dfa9549f853fc133ae.png?width=1280",

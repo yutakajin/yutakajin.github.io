@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "片づけを「週末の仕事」にしないために【ユタカジン】",
+    "url": "https://note.com/makinokumi/n/n3f3972270ea2?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/261427139/rectangle_large_type_2_578dd8702f40204958d396e9c36bf520.png?width=1280",
+    "author": "まきのくみ☕️",
+    "date": "2026年3月24日 01:45",
+    "tags": []
+},
+    
+    {
     "title": "時間を管理するのではなく『時間を生きる』 【ユタカジン】",
     "url": "https://note.com/zakky_tc/n/n3d82ebb1e5d8?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/261585495/rectangle_large_type_2_3fa328750aea16fc5c22d8cddd471f41.png?width=1280",

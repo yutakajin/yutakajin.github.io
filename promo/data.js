@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "【ユタカジン】羊をめぐるMCP、あるいは僕たちがタスクシュート・クラウド2と新しいレポートについて語るときに僕たちの語ること",
+    "url": "https://note.com/ogipooh/n/n3f85ca6b5b2d?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/262371027/rectangle_large_type_2_ac2325ef6bd1f8db0de84430e83ccff7.png?width=1280",
+    "author": "おぎ",
+    "date": "2026年3月26日 14:51",
+    "tags": []
+},
+    
+    {
     "title": "「今」に迷う子供と、「今日」を失う大人。見通しが私たちを救う理由【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n3e96c487067a?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/261767254/rectangle_large_type_2_8aaef1e50f6ff50cc2502af1de989954.png?width=1280",

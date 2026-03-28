@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "私たちも宇宙人",
+    "url": "https://note.com/calm_acacia2553/n/na319966773dc?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/262701150/rectangle_large_type_2_242169472e826498561e00c34774a982.png?width=1280",
+    "author": "なお",
+    "date": "2026年3月28日 06:31",
+    "tags": []
+},
+    
+    {
     "title": "【ユタカジン】羊をめぐるMCP、あるいは僕たちがタスクシュート・クラウド2と新しいレポートについて語るときに僕たちの語ること",
     "url": "https://note.com/ogipooh/n/n3f85ca6b5b2d?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/262371027/rectangle_large_type_2_ac2325ef6bd1f8db0de84430e83ccff7.png?width=1280",

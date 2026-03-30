@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "習慣が続かない人へ。自分を責めなくなった方法【ユタカジン】",
+    "url": "https://note.com/arihit0/n/nb5054495cf39?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/263250697/rectangle_large_type_2_4c0525eca82c6c5283cb2dfec7748aab.png?width=1280",
+    "author": "ありひと",
+    "date": "2026年3月30日 00:02",
+    "tags": []
+},
+    
+    {
     "title": "私たちも宇宙人",
     "url": "https://note.com/calm_acacia2553/n/na319966773dc?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/262701150/rectangle_large_type_2_242169472e826498561e00c34774a982.png?width=1280",

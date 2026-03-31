@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "記録しにくいこと",
+    "url": "https://note.com/akyd/n/n5baebd12ed4a?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/262453935/rectangle_large_type_2_104af1c3c0fcfc02e8575bfafe0640df.png?width=1280",
+    "author": "akyd",
+    "date": "2026年3月31日 03:57",
+    "tags": []
+},
+    
+    {
     "title": "習慣が続かない人へ。自分を責めなくなった方法【ユタカジン】",
     "url": "https://note.com/arihit0/n/nb5054495cf39?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/263250697/rectangle_large_type_2_4c0525eca82c6c5283cb2dfec7748aab.png?width=1280",

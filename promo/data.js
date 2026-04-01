@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "習慣化は「意志」ではなく「設計」で決まる【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/n44014f243878?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/263960757/rectangle_large_type_2_1eebab0341d4871bc88373ff764103f4.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年4月1日 10:24",
+    "tags": []
+},
+    
+    {
     "title": "記録しにくいこと",
     "url": "https://note.com/akyd/n/n5baebd12ed4a?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/262453935/rectangle_large_type_2_104af1c3c0fcfc02e8575bfafe0640df.png?width=1280",

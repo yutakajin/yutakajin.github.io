@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "TaskChute for Obsidian ドキュメント制作プロジェクトのご紹介【ユタカジン】",
+    "url": "https://note.com/shingotanaka/n/n32f314f7f153?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/264439549/rectangle_large_type_2_90065ff883847468431a033f463a45c6.jpeg?width=1280",
+    "author": "田中 新吾",
+    "date": "2026年4月4日 00:20",
+    "tags": []
+},
+    
+    {
     "title": "習慣化は「意志」ではなく「設計」で決まる【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n44014f243878?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/263960757/rectangle_large_type_2_1eebab0341d4871bc88373ff764103f4.png?width=1280",

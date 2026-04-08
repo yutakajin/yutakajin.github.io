@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "習慣化のゴールは「自動化」ではない【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/n2d7a9d669ca9?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/265874394/rectangle_large_type_2_60092120336668598ee9fb4c2c0e75a9.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年4月8日 10:28",
+    "tags": []
+},
+    
+    {
     "title": "TaskChute for Obsidian ドキュメント制作プロジェクトのご紹介【ユタカジン】",
     "url": "https://note.com/shingotanaka/n/n32f314f7f153?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/264439549/rectangle_large_type_2_90065ff883847468431a033f463a45c6.jpeg?width=1280",

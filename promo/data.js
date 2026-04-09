@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "怪談・妖怪「忙しい」！",
+    "url": "https://note.com/ogipooh/n/nf2442a8c074c?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/266166022/rectangle_large_type_2_d2f6174a1720722e2ba518afa919b615.png?width=1280",
+    "author": "おぎ",
+    "date": "2026年4月9日 13:35",
+    "tags": []
+},
+    
+    {
     "title": "習慣化のゴールは「自動化」ではない【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n2d7a9d669ca9?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/265874394/rectangle_large_type_2_60092120336668598ee9fb4c2c0e75a9.png?width=1280",

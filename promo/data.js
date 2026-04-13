@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "タスクシュートの声を聴け 【ユタカジン】",
+    "url": "https://note.com/zakky_tc/n/ne5ca59a2deaf?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/267216034/rectangle_large_type_2_036cf826a891f67317430f7b6676be70.png?width=1280",
+    "author": "Zakky",
+    "date": "2026年4月13日 14:58",
+    "tags": []
+},
+    
+    {
     "title": "時間の使い方には、片づけの視点が役に立つ【ユタカジン】",
     "url": "https://note.com/makinokumi/n/n349b98adba27?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/266264161/rectangle_large_type_2_1c21ae1ba41d2354a82635a19bf2c5eb.png?width=1280",

@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「やる気が出たらやる」では続かない【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/na3bb8ab87e33?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/267641380/rectangle_large_type_2_d68d6efdc91acd13394d7e527103cb99.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年4月15日 10:06",
+    "tags": []
+},
+    
+    {
     "title": "タスクシュートの声を聴け 【ユタカジン】",
     "url": "https://note.com/zakky_tc/n/ne5ca59a2deaf?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/267216034/rectangle_large_type_2_036cf826a891f67317430f7b6676be70.png?width=1280",

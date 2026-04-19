@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "豊かさを考える、その前に考えるべきこと。",
+    "url": "https://note.com/coachingoffice/n/n0fed45088329?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/268715524/rectangle_large_type_2_88c1f85cd80b2c80a3963f58a26572db.png?width=1280",
+    "author": "しろうず＠ライフバランス × タスク管理コーチ",
+    "date": "2026年4月19日 13:54",
+    "tags": []
+},
+    
+    {
     "title": "「やる気が出たらやる」では続かない【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/na3bb8ab87e33?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/267641380/rectangle_large_type_2_d68d6efdc91acd13394d7e527103cb99.png?width=1280",

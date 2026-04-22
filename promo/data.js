@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "タスクシュートなら「やる気ゼロ」でも続けられる【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/naeb6ccd20516?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/269496383/rectangle_large_type_2_c6b219c035d7e58f0d2b36d65967e3d8.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年4月22日 10:16",
+    "tags": []
+},
+    
+    {
     "title": "豊かさを考える、その前に考えるべきこと。",
     "url": "https://note.com/coachingoffice/n/n0fed45088329?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/268715524/rectangle_large_type_2_88c1f85cd80b2c80a3963f58a26572db.png?width=1280",

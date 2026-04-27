@@ -1,5 +1,22 @@
 const articles = [
     {
+    "title": "タスクシュートを整える処方箋 【ユタカジン】",
+    "url": "https://note.com/zakky_tc/n/n93dea9b9d706?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/270983132/rectangle_large_type_2_f7cf2348c430d4f672061da81aae7ee1.png?width=1280",
+    "author": "Zakky",
+    "date": "2026年4月27日 15:16",
+    "tags": []
+},
+    {
+    "title": "ログが脱落しづらくなるコツ【ユタカジン】",
+    "url": "https://note.com/arihit0/n/n04ff8ad51b9f?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/270521709/rectangle_large_type_2_7e183551bfb14ee99195f0c8ce472f44.png?width=1280",
+    "author": "ありひと",
+    "date": "2026年4月26日 05:04",
+    "tags": []
+},
+    
+    {
     "title": "ユタカジンラジオ祝公開！【ユタカジン】",
     "url": "https://note.com/mutsumiwatanabe/n/n69d15e75cbc2?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/270186457/rectangle_large_type_2_808b3ebbbc4618517fe44a3b879fe44f.jpeg?width=1280",

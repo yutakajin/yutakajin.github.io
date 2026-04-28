@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "調子悪くて",
+    "url": "https://note.com/akyd/n/n28c0f763a558?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/270711142/rectangle_large_type_2_05a514b4688c35461a98b5b2939f3fa1.png?width=1280",
+    "author": "akyd",
+    "date": "2026年4月28日 04:07",
+    "tags": []
+},
+    
+    {
     "title": "タスクシュートを整える処方箋 【ユタカジン】",
     "url": "https://note.com/zakky_tc/n/n93dea9b9d706?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/270983132/rectangle_large_type_2_f7cf2348c430d4f672061da81aae7ee1.png?width=1280",

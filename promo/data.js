@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "タスクシュートは「習慣の温室」だ",
+    "url": "https://note.com/fildstraycats/n/n87aeaa54e712?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/271508290/rectangle_large_type_2_7f58c81793005ccd19db18aa21275c11.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年4月29日 12:42",
+    "tags": []
+},
+    
+    {
     "title": "調子悪くて",
     "url": "https://note.com/akyd/n/n28c0f763a558?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/270711142/rectangle_large_type_2_05a514b4688c35461a98b5b2939f3fa1.png?width=1280",

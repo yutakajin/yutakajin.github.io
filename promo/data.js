@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "小説【タスクシュートのキセキ】　〜プロローグ〜",
+    "url": "https://note.com/ogipooh/n/n4f2b0caa0a27?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/271880114/rectangle_large_type_2_5b4e53b4b21e6f0a7eea97301e4f9cd0.jpg?width=1280",
+    "author": "おぎ",
+    "date": "2026年4月30日 14:52",
+    "tags": []
+},
+    
+    {
     "title": "タスクシュートは「習慣の温室」だ",
     "url": "https://note.com/fildstraycats/n/n87aeaa54e712?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/271508290/rectangle_large_type_2_7f58c81793005ccd19db18aa21275c11.png?width=1280",

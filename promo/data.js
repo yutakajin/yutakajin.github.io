@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "タスクシュートで「ジムの中の行動の最適化」にも取り組んでいる話。【ユタカジン】",
+    "url": "https://note.com/shingotanaka/n/nc52dcfcc6d41?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/271954967/rectangle_large_type_2_5acf0e89fddf6c0a6acb35400ce4b19b.png?width=1280",
+    "author": "田中 新吾",
+    "date": "2026年5月2日 00:12",
+    "tags": []
+},
+    
+    {
     "title": "小説【タスクシュートのキセキ】　〜プロローグ〜",
     "url": "https://note.com/ogipooh/n/n4f2b0caa0a27?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/271880114/rectangle_large_type_2_5b4e53b4b21e6f0a7eea97301e4f9cd0.jpg?width=1280",

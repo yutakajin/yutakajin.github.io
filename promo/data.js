@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "ベーシック講座とnoteメンバーシップのご案内｜あなたの「習慣化」を3カ月間、本気で伴走します【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/n3982265fefa2?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/273643684/rectangle_large_type_2_75893bcdd2a5872fa7f477279671d1f0.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年5月6日 12:54",
+    "tags": []
+},
+    
+    {
     "title": "タスクシュートで「ジムの中の行動の最適化」にも取り組んでいる話。【ユタカジン】",
     "url": "https://note.com/shingotanaka/n/nc52dcfcc6d41?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/271954967/rectangle_large_type_2_5acf0e89fddf6c0a6acb35400ce4b19b.png?width=1280",

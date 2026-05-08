@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "平常心を忘れない【ユタカジン】",
+    "url": "https://note.com/tomorin_task/n/n9770cd5db7bd?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/273915583/rectangle_large_type_2_c2daed879ad76be64f5772a893d51514.png?width=1280",
+    "author": "ともりん",
+    "date": "2026年5月7日 23:20",
+    "tags": []
+},
+    
+    {
     "title": "ベーシック講座とnoteメンバーシップのご案内｜あなたの「習慣化」を3カ月間、本気で伴走します【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n3982265fefa2?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/273643684/rectangle_large_type_2_75893bcdd2a5872fa7f477279671d1f0.png?width=1280",

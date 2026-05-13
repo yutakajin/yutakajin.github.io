@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "ベーシック講座をついに今度の日曜日に開催します！【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/n04808be784f5?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/275742233/rectangle_large_type_2_194646676d1966e31cfc8c3e5558aa1c.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年5月13日 10:52",
+    "tags": []
+},
+    
+    {
     "title": "平常心を忘れない【ユタカジン】",
     "url": "https://note.com/tomorin_task/n/n9770cd5db7bd?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/273915583/rectangle_large_type_2_c2daed879ad76be64f5772a893d51514.png?width=1280",

@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "10年ぶりのディズニー！AIで「最強の計画」が立てられたので捨てました。",
+    "url": "https://note.com/ogipooh/n/ne7fcb98dfc33?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/276122628/rectangle_large_type_2_aa23239120f75384ef75c686f830af04.png?width=1280",
+    "author": "おぎ",
+    "date": "2026年5月14日 14:39",
+    "tags": []
+},
+    
+    {
     "title": "ベーシック講座をついに今度の日曜日に開催します！【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n04808be784f5?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/275742233/rectangle_large_type_2_194646676d1966e31cfc8c3e5558aa1c.png?width=1280",

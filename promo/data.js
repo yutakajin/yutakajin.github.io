@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「それ、逆です」タスクシュートでは豊かになれない",
+    "url": "https://note.com/coachingoffice/n/n129546851b22?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/276880015/rectangle_large_type_2_ff9664ffd2c7d5b961bfa9621fc308a5.png?width=1280",
+    "author": "しろうず＠ライフバランス × タスク管理コーチ",
+    "date": "2026年5月17日 08:29",
+    "tags": []
+},
+    
+    {
     "title": "10年ぶりのディズニー！AIで「最強の計画」が立てられたので捨てました。",
     "url": "https://note.com/ogipooh/n/ne7fcb98dfc33?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/276122628/rectangle_large_type_2_aa23239120f75384ef75c686f830af04.png?width=1280",

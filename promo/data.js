@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「全部やるリスト」をレシピ化する 【ユタカジン】",
+    "url": "https://note.com/zakky_tc/n/n0fb641e8befe?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/277322821/rectangle_large_type_2_6248e2228442eed7284c873826115208.png?width=1280",
+    "author": "Zakky",
+    "date": "2026年5月18日 14:45",
+    "tags": []
+},
+    
+    {
     "title": "「それ、逆です」タスクシュートでは豊かになれない",
     "url": "https://note.com/coachingoffice/n/n129546851b22?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/276880015/rectangle_large_type_2_ff9664ffd2c7d5b961bfa9621fc308a5.png?width=1280",

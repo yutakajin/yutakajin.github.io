@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "2年越しで開講してわかった。“やりたいのに動けない”あなたへの答え【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/na1ddf8c1e9b9?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/277576985/rectangle_large_type_2_d906384e143ceba45e778ae05fc90365.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年5月19日 22:01",
+    "tags": []
+},
+    
+    {
     "title": "「全部やるリスト」をレシピ化する 【ユタカジン】",
     "url": "https://note.com/zakky_tc/n/n0fb641e8befe?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/277322821/rectangle_large_type_2_6248e2228442eed7284c873826115208.png?width=1280",

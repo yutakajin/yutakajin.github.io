@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「タスクシュートを使っても、なんだかイマイチ……」という あなたへ",
+    "url": "https://note.com/sugamari_spirit/n/n5f6ba2bcd7ed?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/278178323/rectangle_large_type_2_f0535766f760e44e6d9b5e78c3cf21e6.png?width=1280",
+    "author": "sugamari💫タスクシュート認定トレーナー",
+    "date": "2026年5月21日 11:25",
+    "tags": []
+},
+    
+    {
     "title": "2年越しで開講してわかった。“やりたいのに動けない”あなたへの答え【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/na1ddf8c1e9b9?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/277576985/rectangle_large_type_2_d906384e143ceba45e778ae05fc90365.png?width=1280",

@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "流れを見いだす",
+    "url": "https://note.com/akyd/n/n9595267d8f8e?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/278975482/rectangle_large_type_2_6c9c12fa4298056d63148af1c724381f.png?width=1280",
+    "author": "akyd",
+    "date": "2026年5月26日 04:34",
+    "tags": []
+},
+    
+    {
     "title": "「タスクシュートを使っても、なんだかイマイチ……」という あなたへ",
     "url": "https://note.com/sugamari_spirit/n/n5f6ba2bcd7ed?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/278178323/rectangle_large_type_2_f0535766f760e44e6d9b5e78c3cf21e6.png?width=1280",

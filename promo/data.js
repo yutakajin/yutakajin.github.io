@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "タスクシュートを使うと習慣を「やめなくなる」理由【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/nd58a78513dc6?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/280047200/rectangle_large_type_2_43e87e022ad919fdb849858d46560481.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年5月27日 10:42",
+    "tags": []
+},
+    
+    {
     "title": "流れを見いだす",
     "url": "https://note.com/akyd/n/n9595267d8f8e?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/278975482/rectangle_large_type_2_6c9c12fa4298056d63148af1c724381f.png?width=1280",

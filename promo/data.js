@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "これが、現時点での「自分らしい時間的豊かさ」へのマイアンサー【ユタカジン】",
+    "url": "https://note.com/shingotanaka/n/nd9ef073ab175?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/282483941/rectangle_large_type_2_aeaa537d80c70f5b95e37da06e194f5a.png?width=1280",
+    "author": "田中 新吾",
+    "date": "2026年6月6日 01:07",
+    "tags": []
+},
+    
+    {
     "title": "自分を取り戻したと思ったからこそ改めての自己紹介その1【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n988932616b24?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/282207515/rectangle_large_type_2_05e626c0a77ee2cb356abb941c4829b5.png?width=1280",

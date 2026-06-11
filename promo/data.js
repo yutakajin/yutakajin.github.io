@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「できなかった日」にこそ価値がある——タスク管理は「最初の一歩」で決まる【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/n80bb44a2de69?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/284229066/rectangle_large_type_2_64b0c09cf760a893449903a61cbdbe54.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年6月10日 10:27",
+    "tags": []
+},
+    
+    {
     "title": "誰にでも秘ケツはある",
     "url": "https://note.com/calm_acacia2553/n/n2484359c36c7?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/283255289/rectangle_large_type_2_2f34036f83b5e4faf65477312ad15322.png?width=1280",

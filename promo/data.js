@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "人事を尽くして天命を待つ【ユタカジン】",
+    "url": "https://note.com/tomorin_task/n/nef43e271862b?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/284562462/rectangle_large_type_2_c56f6288a64b11bbe534be659a1a7ed3.jpeg?width=1280",
+    "author": "ともりん",
+    "date": "2026年6月12日 00:41",
+    "tags": []
+},
+    
+    {
     "title": "「できなかった日」にこそ価値がある——タスク管理は「最初の一歩」で決まる【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n80bb44a2de69?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/284229066/rectangle_large_type_2_64b0c09cf760a893449903a61cbdbe54.png?width=1280",

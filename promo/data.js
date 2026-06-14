@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "工夫が交錯する場所",
+    "url": "https://note.com/akyd/n/n9a4840f35276?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/285398637/rectangle_large_type_2_c8a8711b5649b8751af6670616113b89.png?width=1280",
+    "author": "akyd",
+    "date": "2026年6月14日 09:34",
+    "tags": []
+},
+    
+    {
     "title": "人事を尽くして天命を待つ【ユタカジン】",
     "url": "https://note.com/tomorin_task/n/nef43e271862b?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/284562462/rectangle_large_type_2_c56f6288a64b11bbe534be659a1a7ed3.jpeg?width=1280",

@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "明日のための「もう少し」をやめたら、手戻りが激減した話【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/nd7dbb53f21ea?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/286274718/rectangle_large_type_2_a0ce6cbf25221dff7c0f1e35c9daece9.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年6月17日 09:22",
+    "tags": []
+},
+    
+    {
     "title": "工夫が交錯する場所",
     "url": "https://note.com/akyd/n/n9a4840f35276?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/285398637/rectangle_large_type_2_c8a8711b5649b8751af6670616113b89.png?width=1280",

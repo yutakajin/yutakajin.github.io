@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "【TaskChute Cloud 2】非IT民の運用法ver.2｜怒涛のアプデで使用方法は変化した？",
+    "url": "https://note.com/sugamari_spirit/n/n7fc51c1a8eba?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/286553895/rectangle_large_type_2_6c046337d6e1224a18ab51f98d098749.png?width=1280",
+    "author": "sugamari💫タスクシュート認定トレーナー",
+    "date": "2026年6月18日 12:26",
+    "tags": []
+},
+    
+    {
     "title": "明日のための「もう少し」をやめたら、手戻りが激減した話【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/nd7dbb53f21ea?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/286274718/rectangle_large_type_2_a0ce6cbf25221dff7c0f1e35c9daece9.png?width=1280",

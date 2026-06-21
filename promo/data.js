@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "AIエージェントをフル活用するには「ログ」が鍵になるはず。【ユタカジン】",
+    "url": "https://note.com/coachingoffice/n/n7ccb81a4928e?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/287445354/rectangle_large_type_2_a83b97dfef068d7fb601947076b1429f.png?width=1280",
+    "author": "しろうず＠ライフバランス × タスク管理コーチ",
+    "date": "2026年6月21日 09:19",
+    "tags": []
+},
+    
+    {
     "title": "【TaskChute Cloud 2】非IT民の運用法ver.2｜怒涛のアプデで使用方法は変化した？",
     "url": "https://note.com/sugamari_spirit/n/n7fc51c1a8eba?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/286553895/rectangle_large_type_2_6c046337d6e1224a18ab51f98d098749.png?width=1280",

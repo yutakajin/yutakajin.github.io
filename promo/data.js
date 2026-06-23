@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "【ユタカジン】豊かな時間は、たっぷりある",
+    "url": "https://note.com/109maru/n/nff3a58a91ebe?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/287769832/rectangle_large_type_2_23bf01552d56af2da1de0fd5b76bbec3.png?width=1280",
+    "author": "とくまる｜公務員のタスク管理｜7/4(土)ベーシック講座",
+    "date": "2026年6月22日 21:19",
+    "tags": []
+},
+    
+    {
     "title": "AIエージェントをフル活用するには「ログ」が鍵になるはず。【ユタカジン】",
     "url": "https://note.com/coachingoffice/n/n7ccb81a4928e?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/287445354/rectangle_large_type_2_a83b97dfef068d7fb601947076b1429f.png?width=1280",

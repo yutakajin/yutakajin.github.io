@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "『まだ大丈夫』と『もうダメだ』のあいだで ― 正常化バイアスと悲観的バイアスを超えるタスク管理【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/nd025d50f125e?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/288369534/rectangle_large_type_2_da9d4e16cbbe4d04cf3e242cd1ba7dc8.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年6月24日 09:54",
+    "tags": []
+},
+    
+    {
     "title": "【ユタカジン】豊かな時間は、たっぷりある",
     "url": "https://note.com/109maru/n/nff3a58a91ebe?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/287769832/rectangle_large_type_2_23bf01552d56af2da1de0fd5b76bbec3.png?width=1280",

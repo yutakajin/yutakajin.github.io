@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "【ユタカジン】横浜・野毛で、元祖タスクシュートの「基本型」を—7/4ベーシック講座開催！",
+    "url": "https://note.com/109maru/n/nd019c57bad25?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/289237599/rectangle_large_type_2_ea903e3f8cf6936dbd6c7b5bde773cfd.png?width=1280",
+    "author": "とくまる｜公務員のタスク管理｜7/4(土)ベーシック講座",
+    "date": "2026年6月29日 03:24",
+    "tags": []
+},
+    
+    {
     "title": "『まだ大丈夫』と『もうダメだ』のあいだで ― 正常化バイアスと悲観的バイアスを超えるタスク管理【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/nd025d50f125e?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/288369534/rectangle_large_type_2_da9d4e16cbbe4d04cf3e242cd1ba7dc8.png?width=1280",

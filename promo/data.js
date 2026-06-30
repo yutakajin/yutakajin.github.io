@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "積ん読とルーチン",
+    "url": "https://note.com/akyd/n/n2e64ba3db4ba?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/289995007/rectangle_large_type_2_f58aae347692ff892dc020878c421c71.png?width=1280",
+    "author": "akyd",
+    "date": "2026年6月30日 03:50",
+    "tags": []
+},
+    
+    {
     "title": "【ユタカジン】横浜・野毛で、元祖タスクシュートの「基本型」を—7/4ベーシック講座開催！",
     "url": "https://note.com/109maru/n/nd019c57bad25?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/289237599/rectangle_large_type_2_ea903e3f8cf6936dbd6c7b5bde773cfd.png?width=1280",

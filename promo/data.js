@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "自分を取り戻したと思ったからこそ改めての自己紹介②～ユタカジン",
+    "url": "https://note.com/fildstraycats/n/na9d7b8346d95?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/290562086/rectangle_large_type_2_b33318218a324ec5a5fbc1075e76ecfd.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年7月1日 12:20",
+    "tags": []
+},
+    
+    {
     "title": "積ん読とルーチン",
     "url": "https://note.com/akyd/n/n2e64ba3db4ba?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/289995007/rectangle_large_type_2_f58aae347692ff892dc020878c421c71.png?width=1280",

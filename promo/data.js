@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "タスクシュータージャンクションに参加して、私が得た3つのこと。",
+    "url": "https://note.com/shingotanaka/n/nf15ae0016d2d?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/291318886/rectangle_large_type_2_ed3bd1617ec3da9bfbf3b52cec04f15d.png?width=1280",
+    "author": "田中 新吾",
+    "date": "2026年7月4日 11:23",
+    "tags": []
+},
+    
+    {
     "title": "自分を取り戻したと思ったからこそ改めての自己紹介②～ユタカジン",
     "url": "https://note.com/fildstraycats/n/na9d7b8346d95?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/290562086/rectangle_large_type_2_b33318218a324ec5a5fbc1075e76ecfd.png?width=1280",

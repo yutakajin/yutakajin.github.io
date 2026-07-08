@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "発達ゆっくりさんと、タスクシュート～ユタカジン",
+    "url": "https://note.com/fildstraycats/n/na937db9c0c7e?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/292611396/rectangle_large_type_2_b6cb83c59aed28c326f3ac4e1ff59a8a.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年7月8日 10:26",
+    "tags": []
+},
+    
+    {
     "title": "タスクシュータージャンクションに参加して、私が得た3つのこと。",
     "url": "https://note.com/shingotanaka/n/nf15ae0016d2d?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/291318886/rectangle_large_type_2_ed3bd1617ec3da9bfbf3b52cec04f15d.png?width=1280",

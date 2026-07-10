@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "いつも不安の中に身を置いていく【ユタカジン】",
+    "url": "https://note.com/tomorin_task/n/n77757faa59d2?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/293044088/rectangle_large_type_2_63d6e484f4289bd565f3dc613642cbe5.png?width=1280",
+    "author": "ともりん",
+    "date": "2026年7月10日 01:03",
+    "tags": []
+},
+    
+    {
     "title": "発達ゆっくりさんと、タスクシュート～ユタカジン",
     "url": "https://note.com/fildstraycats/n/na937db9c0c7e?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/292611396/rectangle_large_type_2_b6cb83c59aed28c326f3ac4e1ff59a8a.png?width=1280",

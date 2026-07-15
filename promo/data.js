@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「やりたいこと」が見えなくなったときのタスク管理～ユタカジン",
+    "url": "https://note.com/fildstraycats/n/nc1d12fc20b1d?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/294572495/rectangle_large_type_2_ec4aeab598a0451ab4c57544b78b8ac5.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年7月15日 07:51",
+    "tags": []
+},
+    
+    {
     "title": "いつも不安の中に身を置いていく【ユタカジン】",
     "url": "https://note.com/tomorin_task/n/n77757faa59d2?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/293044088/rectangle_large_type_2_63d6e484f4289bd565f3dc613642cbe5.png?width=1280",

@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "タスクシュートを使っているのに、なぜ先延ばしが起こるのか？",
+    "url": "https://note.com/coachingoffice/n/n241d54e5e06e?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/295704442/rectangle_large_type_2_89ab26de430ee0052d0d5fba9b93f3b6.png?width=1280",
+    "author": "しろうず＠ライフバランス × タスク管理コーチ",
+    "date": "2026年7月19日 08:12",
+    "tags": []
+},
+    
+    {
     "title": "【開催報告】タスクシュータージャンクション in 埼玉｜ここから広がっていく",
     "url": "https://note.com/sugamari_spirit/n/n43043f35a37a?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/294783189/rectangle_large_type_2_5b27d07e420b2e1a3711b5275a60d958.png?width=1280",

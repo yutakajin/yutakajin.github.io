@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "あえてタスクシュートを止めてみたら～ユタカジン",
+    "url": "https://note.com/fildstraycats/n/n6160d645b2b4?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/296601118/rectangle_large_type_2_b907eb08a2d36e966aef30c3745bf4b1.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年7月22日 10:15",
+    "tags": []
+},
+    
+    {
     "title": "タスクシュートを使っているのに、なぜ先延ばしが起こるのか？",
     "url": "https://note.com/coachingoffice/n/n241d54e5e06e?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/295704442/rectangle_large_type_2_89ab26de430ee0052d0d5fba9b93f3b6.png?width=1280",

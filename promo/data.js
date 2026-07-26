@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「本気出せばもっとやれる」と思う人は、記録をするといい",
+    "url": "https://note.com/calm_acacia2553/n/nc0381f5210fe?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/297374109/rectangle_large_type_2_4a7aff5183c6ca05aa57f4c4e90aea4d.png?width=1280",
+    "author": "なお",
+    "date": "2026年7月25日 05:45",
+    "tags": []
+},
+    
+    {
     "title": "あえてタスクシュートを止めてみたら～ユタカジン",
     "url": "https://note.com/fildstraycats/n/n6160d645b2b4?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/296601118/rectangle_large_type_2_b907eb08a2d36e966aef30c3745bf4b1.png?width=1280",

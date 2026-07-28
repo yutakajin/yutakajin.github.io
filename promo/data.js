@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "夏怒濤",
+    "url": "https://note.com/akyd/n/n84fea4e9b539?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/298137003/rectangle_large_type_2_0d55b2d9f88c13e9ab168c55663b26ed.png?width=1280",
+    "author": "akyd",
+    "date": "2026年7月28日 01:41",
+    "tags": []
+},
+    
+    {
     "title": "「本気出せばもっとやれる」と思う人は、記録をするといい",
     "url": "https://note.com/calm_acacia2553/n/nc0381f5210fe?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/297374109/rectangle_large_type_2_4a7aff5183c6ca05aa57f4c4e90aea4d.png?width=1280",

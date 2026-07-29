@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "イマココに集中するということ〜ユタカジン",
+    "url": "https://note.com/fildstraycats/n/n8e83bf53b261?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/298622355/rectangle_large_type_2_aa7c86bf046421e1ed863d43dd6dee87.jpeg?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年7月29日 11:00",
+    "tags": []
+},
+    
+    {
     "title": "夏怒濤",
     "url": "https://note.com/akyd/n/n84fea4e9b539?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/298137003/rectangle_large_type_2_0d55b2d9f88c13e9ab168c55663b26ed.png?width=1280",

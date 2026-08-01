@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "小説 - おどりば",
+    "url": "https://note.com/shingotanaka/n/na9ee5e1ea1f5?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/298925173/rectangle_large_type_2_1b8e855c655770e1af27c79c6bba4804.png?width=1280",
+    "author": "田中 新吾",
+    "date": "2026年8月1日 00:44",
+    "tags": []
+},
+    
+    {
     "title": "イマココに集中するということ〜ユタカジン",
     "url": "https://note.com/fildstraycats/n/n8e83bf53b261?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/298622355/rectangle_large_type_2_aa7c86bf046421e1ed863d43dd6dee87.jpeg?width=1280",

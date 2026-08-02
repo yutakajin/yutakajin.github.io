@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "【ユタカジン】クラウドが使えない職場で、タスクシュートを回すということ",
+    "url": "https://note.com/109maru/n/n7a1afcfb2367?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/295438429/rectangle_large_type_2_7fac5b3db38aee390264185f6191db12.png?width=1280",
+    "author": "とくまる｜TempoCraft｜公務員",
+    "date": "2026年8月1日 23:24",
+    "tags": []
+},
+    
+    {
     "title": "小説 - おどりば",
     "url": "https://note.com/shingotanaka/n/na9ee5e1ea1f5?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/298925173/rectangle_large_type_2_1b8e855c655770e1af27c79c6bba4804.png?width=1280",

@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "タスクシュートをいったん止めた後、再開した時のお話～ユタカジン",
+    "url": "https://note.com/fildstraycats/n/nc69832684f43?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/300716382/rectangle_large_type_2_05fd18790607a19b4a89dd53e94b1823.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年8月5日 10:34",
+    "tags": []
+},
+    
+    {
     "title": "【ユタカジン】クラウドが使えない職場で、タスクシュートを回すということ",
     "url": "https://note.com/109maru/n/n7a1afcfb2367?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/295438429/rectangle_large_type_2_7fac5b3db38aee390264185f6191db12.png?width=1280",

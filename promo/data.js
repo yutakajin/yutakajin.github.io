@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "例えば子供の夏休みで親がどう過ごすのかとかの話【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/n9b7a7efae19c?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/302835653/rectangle_large_type_2_4250d5899334b452043cf18858957b4f.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年8月12日 10:10",
+    "tags": []
+},
+    
+    {
     "title": "タスクシュートをいったん止めた後、再開した時のお話～ユタカジン",
     "url": "https://note.com/fildstraycats/n/nc69832684f43?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/300716382/rectangle_large_type_2_05fd18790607a19b4a89dd53e94b1823.png?width=1280",

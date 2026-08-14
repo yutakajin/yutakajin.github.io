@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "現在（いま）を興奮して生きる【ユタカジン】",
+    "url": "https://note.com/tomorin_task/n/naf23e02f9e84?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/303300685/rectangle_large_type_2_340498a515c133ddb7664b4af97c2b03.png?width=1280",
+    "author": "ともりん",
+    "date": "2026年8月14日 01:06",
+    "tags": []
+},
+    
+    {
     "title": "例えば子供の夏休みで親がどう過ごすのかとかの話【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n9b7a7efae19c?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/302835653/rectangle_large_type_2_4250d5899334b452043cf18858957b4f.png?width=1280",

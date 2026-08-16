@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "あの人がタスクシュートにハマる理由を知りたい理由",
+    "url": "https://note.com/coachingoffice/n/ndbd20d537434?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/304100952/rectangle_large_type_2_60fc7f14ac76acbee4ae660282f22792.png?width=1280",
+    "author": "しろうず＠ライフバランス × タスク管理コーチ",
+    "date": "2026年8月16日 10:08",
+    "tags": []
+},
+    
+    {
     "title": "現在（いま）を興奮して生きる【ユタカジン】",
     "url": "https://note.com/tomorin_task/n/naf23e02f9e84?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/303300685/rectangle_large_type_2_340498a515c133ddb7664b4af97c2b03.png?width=1280",

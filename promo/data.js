@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "あの人がタスクシュートにハマる理由を知るべき理由【ユタカジン】",
+    "url": "https://note.com/makinokumi/n/n0760abc99f9e?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/304300808/rectangle_large_type_2_b48840db1518abf7861c60ec3fae45b4.png?width=1280",
+    "author": "まきのくみ☕️",
+    "date": "2026年8月17日 02:36",
+    "tags": []
+},
+    
+    {
     "title": "あの人がタスクシュートにハマる理由を知りたい理由",
     "url": "https://note.com/coachingoffice/n/ndbd20d537434?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/304100952/rectangle_large_type_2_60fc7f14ac76acbee4ae660282f22792.png?width=1280",

@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "仕事量が2倍＆夏休みの時短勤務でも定時退社！私が業務崩壊を防げた「タスクシュート」の秘密【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/nb38a3df82513?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/305055660/rectangle_large_type_2_16023aa57f34a530830bbb51cfdc9016.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年8月19日 10:58",
+    "tags": []
+},
+    
+    {
     "title": "あの人がタスクシュートにハマる理由を知るべき理由【ユタカジン】",
     "url": "https://note.com/makinokumi/n/n0760abc99f9e?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/304300808/rectangle_large_type_2_b48840db1518abf7861c60ec3fae45b4.png?width=1280",

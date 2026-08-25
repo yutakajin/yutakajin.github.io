@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "楽しみと自責",
+    "url": "https://note.com/akyd/n/na679904f39a7?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/306585703/rectangle_large_type_2_31e4aaae5a0356f5f5c4196f3712e2ac.png?width=1280",
+    "author": "akyd",
+    "date": "2026年8月25日 03:01",
+    "tags": []
+},
+    
+    {
     "title": "タスクシュートを無理強いしたくない。その上で、伝えたいこと",
     "url": "https://note.com/sugamari_spirit/n/ncf117c8682a1?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/305203278/rectangle_large_type_2_b6733028cb786d6fa3517871dfa1cf0f.png?width=1280",

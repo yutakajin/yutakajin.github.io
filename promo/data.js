@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "AIは便利だ。でも、全部任せてはいけないと思う理由【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/nef2fae3c2b92?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/307243947/rectangle_large_type_2_2bbe14818c9fa5e4f57231e9d7183de6.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年8月26日 09:50",
+    "tags": []
+},
+    
+    {
     "title": "楽しみと自責",
     "url": "https://note.com/akyd/n/na679904f39a7?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/306585703/rectangle_large_type_2_31e4aaae5a0356f5f5c4196f3712e2ac.png?width=1280",

@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "【ユタカジン】時間の神様、クロノスとカイロス。その真髄を漫才で。",
+    "url": "https://note.com/ogipooh/n/nebe61c63d468?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/307617022/rectangle_large_type_2_54c11c2962bcf76c9c4d8060cd13e5c8.jpeg?width=1280",
+    "author": "おぎ",
+    "date": "2026年8月27日 13:26",
+    "tags": []
+},
+    
+    {
     "title": "AIは便利だ。でも、全部任せてはいけないと思う理由【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/nef2fae3c2b92?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/307243947/rectangle_large_type_2_2bbe14818c9fa5e4f57231e9d7183de6.png?width=1280",

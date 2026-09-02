@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「あの頃が一番うまくいっていた」を記憶だけで再現できる人はほとんどいない【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/nff5e3aab58c3?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/309582409/rectangle_large_type_2_4a571346629ebf3f792c48e5d69b1a7d.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年9月2日 10:32",
+    "tags": []
+},
+    
+    {
     "title": "【ユタカジン】時間の神様、クロノスとカイロス。その真髄を漫才で。",
     "url": "https://note.com/ogipooh/n/nebe61c63d468?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/307617022/rectangle_large_type_2_54c11c2962bcf76c9c4d8060cd13e5c8.jpeg?width=1280",

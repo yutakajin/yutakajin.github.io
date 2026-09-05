@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "私がタスクシュートの「集中度」と「元気度」をどのようにして扱っているか？について書く【ユタカジン】",
+    "url": "https://note.com/shingotanaka/n/n2111c555ea27?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/310258753/rectangle_large_type_2_e42165f4efc57f301006a279a54303bb.png?width=1280",
+    "author": "田中 新吾",
+    "date": "2026年9月5日 00:13",
+    "tags": []
+},
+    
+    {
     "title": "「あの頃が一番うまくいっていた」を記憶だけで再現できる人はほとんどいない【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/nff5e3aab58c3?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/309582409/rectangle_large_type_2_4a571346629ebf3f792c48e5d69b1a7d.png?width=1280",

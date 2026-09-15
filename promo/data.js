@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "ありがたい毎日が",
+    "url": "https://note.com/fooglebird/n/n98c204105478?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/313674184/rectangle_large_type_2_bbb8ad2302c73a2466f24deb93e15e05.png?width=1280",
+    "author": "ゆうちん",
+    "date": "2026年9月14日 20:30",
+    "tags": []
+},
+    
+    {
     "title": "【講談】ユタカジンポータルサイト開眼の儀",
     "url": "https://note.com/ogipooh/n/n13ab41e66903?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/312336856/rectangle_large_type_2_83d83a85a10debe57062578840174296.jpeg?width=1280",

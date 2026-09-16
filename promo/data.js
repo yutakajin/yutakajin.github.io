@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「継続できない」のは意志が弱いからじゃない。「重さ」の正体と、自分だけのシステムを作る方法【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/n3ecf1df07b16?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/314373358/rectangle_large_type_2_ae91f45da861a0030946e8f7b2eff06e.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年9月16日 12:05",
+    "tags": []
+},
+    
+    {
     "title": "ありがたい毎日が",
     "url": "https://note.com/fooglebird/n/n98c204105478?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/313674184/rectangle_large_type_2_bbb8ad2302c73a2466f24deb93e15e05.png?width=1280",

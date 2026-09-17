@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "『自分の小さな「箱」から脱出する方法』の感想｜人間関係における超重要な点を学べる本",
+    "url": "https://note.com/sugamari_spirit/n/nb568481547ad?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/314517689/rectangle_large_type_2_aae8b92e459f743025cbe3fd5501add7.png?width=1280",
+    "author": "sugamari💫ちょっとずつ整えるライフサポーター",
+    "date": "2026年9月17日 12:46",
+    "tags": []
+},
+    
+    {
     "title": "「継続できない」のは意志が弱いからじゃない。「重さ」の正体と、自分だけのシステムを作る方法【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/n3ecf1df07b16?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/314373358/rectangle_large_type_2_ae91f45da861a0030946e8f7b2eff06e.png?width=1280",

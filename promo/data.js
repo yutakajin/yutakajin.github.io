@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「記録」が業務改善のキーになる ― タスクシュートを使って改めて思ったこと【ユタカジン】",
+    "url": "https://note.com/tomorin_task/n/n7acfc0a327f9?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/314479642/rectangle_large_type_2_88eacb8824fb1e1a78f0871c136a4a23.png?width=1280",
+    "author": "ともりん",
+    "date": "2026年9月17日 23:17",
+    "tags": []
+},
+    
+    {
     "title": "『自分の小さな「箱」から脱出する方法』の感想｜人間関係における超重要な点を学べる本",
     "url": "https://note.com/sugamari_spirit/n/nb568481547ad?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/314517689/rectangle_large_type_2_aae8b92e459f743025cbe3fd5501add7.png?width=1280",

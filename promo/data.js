@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "ログが続かない人は、続けようとしなくていい",
+    "url": "https://note.com/coachingoffice/n/n31d5b1ec9aa6?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/315952513/rectangle_large_type_2_4541fa8856e92221faa1f0d8cbc3f7e8.png?width=1280",
+    "author": "しろうず＠ライフバランス × タスク管理コーチ",
+    "date": "2026年9月21日 07:33",
+    "tags": []
+},
+    
+    {
     "title": "「記録」が業務改善のキーになる ― タスクシュートを使って改めて思ったこと【ユタカジン】",
     "url": "https://note.com/tomorin_task/n/n7acfc0a327f9?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/314479642/rectangle_large_type_2_88eacb8824fb1e1a78f0871c136a4a23.png?width=1280",

@@ -166,6 +166,10 @@ a:hover {
     border-bottom: 2px solid rgba(141, 163, 153, 0.3);
 }
 
+.author-toggle-btn {
+    display: none;
+}
+
 .sidebar-list li {
     padding: 10px 15px;
     margin-bottom: 5px;
@@ -543,24 +547,89 @@ a:hover {
     }
 
     /* Sidebar adjustments for mobile */
-    .sidebar-section {
-        margin-bottom: 30px;
+    .author-title {
+        display: none;
+    }
+
+    .concept-section {
+        display: none;
+    }
+
+    .sidebar-section.author-section {
+        margin-bottom: 20px;
         text-align: center;
     }
 
-    .sidebar-title {
-        display: inline-block;
-        border-bottom: 2px solid var(--color-header);
-        padding-bottom: 5px;
+    .author-toggle-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: auto;
+        min-width: 220px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px 24px;
+        background-color: var(--color-white);
+        color: var(--color-header);
+        border: 2px solid var(--color-header);
+        border-radius: 30px;
+        font-family: var(--font-main);
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        box-shadow: 0 4px 12px rgba(141, 163, 153, 0.18);
     }
 
-    /* Horizontal scroll for authors on mobile? 
-       Or just a grid/flex-wrap list */
+    .author-toggle-btn:hover,
+    .author-toggle-btn:active {
+        background-color: var(--color-header);
+        color: var(--color-white);
+    }
+
+    .author-toggle-btn .toggle-icon {
+        font-size: 11px;
+        transition: transform 0.25s ease;
+        display: inline-block;
+    }
+
+    .author-toggle-btn.is-open .toggle-icon {
+        transform: rotate(180deg);
+    }
+
+    .author-toggle-btn.is-open {
+        background-color: var(--color-header);
+        color: var(--color-white);
+    }
+
+    /* 執筆者一覧は初期状態で非表示、ボタン押下で開閉 */
     .sidebar-authors {
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+        margin-top: 15px;
+        padding: 15px 10px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 16px;
+        border: 1px dashed rgba(141, 163, 153, 0.4);
+        animation: fadeIn 0.25s ease;
+    }
+
+    .sidebar-authors.is-open {
+        display: flex;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-6px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .sidebar-author-row {

@@ -8,6 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Limit to Recent (e.g., top 24)
     const recentArticles = articles.slice(0, 24);
     renderArticles(recentArticles);
+
+    // Toggle Author List for Mobile
+    const toggleBtn = document.getElementById('author-toggle-btn');
+    const authorListDiv = document.getElementById('author-list');
+    if (toggleBtn && authorListDiv) {
+        toggleBtn.addEventListener('click', () => {
+            const isOpen = authorListDiv.classList.toggle('is-open');
+            toggleBtn.classList.toggle('is-open', isOpen);
+            toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            const btnText = toggleBtn.querySelector('.btn-text');
+            if (btnText) {
+                btnText.textContent = isOpen ? '執筆者一覧を閉じる' : '執筆者一覧を見る';
+            }
+        });
+    }
 });
 
 // --- Today's Recommendation Banner ---

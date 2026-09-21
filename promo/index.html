@@ -27,14 +27,18 @@
     <div class="main-layout">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="sidebar-section">
-                <h3 class="sidebar-title">執筆者</h3>
+            <div class="sidebar-section author-section">
+                <button id="author-toggle-btn" class="author-toggle-btn" type="button" aria-expanded="false">
+                    <span class="btn-text">執筆者一覧を見る</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                <h3 class="sidebar-title author-title">執筆者</h3>
                 <div class="sidebar-authors" id="author-list">
                     <!-- Injected by JS -->
                 </div>
             </div>
 
-            <div class="sidebar-section">
+            <div class="sidebar-section concept-section">
                 <h3 class="sidebar-title">コンセプト</h3>
                 <p class="sidebar-text">「時間がない」毎日から、あなたらしい豊かな時間へ。</p>
             </div>

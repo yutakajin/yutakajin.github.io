@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "うれしい毎日が",
+    "url": "https://note.com/fooglebird/n/n5811ad39f24b?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/316245639/rectangle_large_type_2_2bca0c5644274bcdae671976351658cb.png?width=1280",
+    "author": "ゆうちん",
+    "date": "2026年9月22日 04:17",
+    "tags": []
+},
+    
+    {
     "title": "ログが続かない人は、続けようとしなくていい",
     "url": "https://note.com/coachingoffice/n/n31d5b1ec9aa6?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/315952513/rectangle_large_type_2_4541fa8856e92221faa1f0d8cbc3f7e8.png?width=1280",

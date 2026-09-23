@@ -57,7 +57,7 @@
 
         /* ヘッダー・ヒーロー */
         .hero {
-            background: linear-gradient(135deg, rgba(29, 53, 87, 0.95), rgba(16, 133, 117, 0.9)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover;
+            background: linear-gradient(135deg, rgba(29, 53, 87, 0.92), rgba(16, 133, 117, 0.88)), url('https://izuhananomai.com/img/3wey9.jpeg') center/cover;
             color: #fff;
             padding: 4.5rem 1.25rem 3.5rem;
             text-align: center;
@@ -426,16 +426,54 @@
 
         .facility-img-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 4px;
-            height: 240px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
             background: #e2e8f0;
         }
 
-        .facility-img-grid img {
+        @media (min-width: 640px) {
+            .facility-img-grid {
+                grid-template-columns: repeat(4, 1fr);
+                height: 180px;
+            }
+        }
+
+        .facility-img-item {
+            position: relative;
+            height: 130px;
+            overflow: hidden;
+            background: #cbd5e1;
+        }
+
+        @media (min-width: 640px) {
+            .facility-img-item {
+                height: 100%;
+            }
+        }
+
+        .facility-img-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .facility-img-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .facility-img-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.65);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 3px 6px;
+            text-align: center;
         }
 
         .facility-info {
@@ -751,12 +789,13 @@
     <!-- ヒーローセクション -->
     <header class="hero">
         <div class="badge-pill">
-            <i class="fa-solid fa-sparkles"></i> 2026年 開催
+            <i class="fa-solid fa-calendar-days"></i> 2026年10月3日（土）〜4日（日）
         </div>
         <h1>タスクシュート協会<br>トレーナー合宿 2026</h1>
         <p class="subtitle">時間を愛おしむ仲間と語り、繋がりを深める特別な2日間</p>
         
         <div class="location-meta">
+            <div><i class="fa-regular fa-calendar-check"></i> 10月3日(土)〜4日(日)</div>
             <div><i class="fa-solid fa-hotel"></i> 温泉宿 伊豆華の舞（全館貸切）</div>
             <div><i class="fa-solid fa-location-dot"></i> 静岡県伊東市富戸</div>
             <div><i class="fa-solid fa-hot-tub-person"></i> 天然美肌温泉</div>
@@ -784,9 +823,17 @@
             <div class="section-header">
                 <span class="section-tag">Schedule</span>
                 <h2 class="section-title">タイムスケジュール</h2>
+                <div style="margin-top: 10px;">
+                    <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 700; color: #b45309; background: #fef3c7; border: 1px solid #fde68a; padding: 5px 16px; border-radius: 999px;">
+                        <i class="fa-solid fa-circle-info"></i> あくまで目安の時間です（当日の状況により前後する場合があります）
+                    </span>
+                </div>
             </div>
 
             <div class="card">
+                <div style="margin-bottom: 1.25rem; font-size: 1.05rem; font-weight: 800; color: var(--navy); border-bottom: 2px solid var(--primary-light); padding-bottom: 6px;">
+                    <i class="fa-regular fa-calendar"></i> 10月3日（土）［1日目］
+                </div>
                 <div class="timeline">
                     <!-- 15:00 -->
                     <div class="timeline-item">
@@ -844,7 +891,7 @@
                     <div class="timeline-item">
                         <div class="timeline-icon"><i class="fa-regular fa-sun"></i></div>
                         <div class="timeline-card">
-                            <span class="timeline-time"><i class="fa-regular fa-clock"></i> 2日目 〜 10:00</span>
+                            <span class="timeline-time"><i class="fa-regular fa-clock"></i> 10月4日（日）［2日目］〜 10:00</span>
                             <h3 class="timeline-title">各自朝食 & チェックアウト</h3>
                             <p class="timeline-desc">朝食は各自ご用意いただいたものを自由に召し上がってください。10:00 完全チェックアウトとなります。</p>
                         </div>
@@ -991,9 +1038,22 @@
 
             <div class="facility-hero-card">
                 <div class="facility-img-grid">
-                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="温泉・宿のイメージ">
-                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80" alt="BBQ">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400&q=80" alt="リビング">
+                    <div class="facility-img-item">
+                        <img src="https://izuhananomai.com/img/z73l0.jpeg" alt="天然温泉（公式サイトより）">
+                        <div class="facility-img-caption">天然温泉 美肌の湯</div>
+                    </div>
+                    <div class="facility-img-item">
+                        <img src="https://izuhananomai.com/img/l4p2jg.jpeg" alt="屋根付きBBQテラス（公式サイトより）">
+                        <div class="facility-img-caption">屋根付きBBQテラス</div>
+                    </div>
+                    <div class="facility-img-item">
+                        <img src="https://izuhananomai.com/img/rr974.jpeg" alt="大開口リビング（公式サイトより）">
+                        <div class="facility-img-caption">大開口リビング</div>
+                    </div>
+                    <div class="facility-img-item">
+                        <img src="https://izuhananomai.com/img/lc256c.jpeg" alt="洋室客室（公式サイトより）">
+                        <div class="facility-img-caption">洋室客室（全9室）</div>
+                    </div>
                 </div>
                 <div class="facility-info">
                     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px;">
@@ -1145,7 +1205,10 @@
     <footer>
         <div class="container">
             <div class="footer-logo">一般社団法人タスクシュート協会</div>
-            <p style="margin-bottom: 1rem;">トレーナー合宿 2026 @ 温泉宿 伊豆華の舞</p>
+            <p style="margin-bottom: 0.4rem; font-weight: 700; color: #fff;">
+                トレーナー合宿 2026【2026年10月3日（土）〜4日（日）】
+            </p>
+            <p style="margin-bottom: 1rem; font-size: 0.9rem;">会場：温泉宿 伊豆華の舞（全館貸切り）</p>
             <p style="font-size: 0.8rem; opacity: 0.7;">
                 〒413-0231 静岡県伊東市富戸1317-4573 / TEL: 0557-52-3063
             </p>

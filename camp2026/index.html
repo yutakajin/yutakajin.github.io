@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タスクシュート協会 トレーナー合宿 2026 | 旅のしおり & 総合案内</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Noto+Sans+JP:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #108575;
+            --primary-dark: #09594f;
+            --primary-light: #e6f6f4;
+            --accent: #e07a5f;
+            --accent-warm: #f4a261;
+            --navy: #1d3557;
+            --slate: #457b9d;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #2d3748;
+            --text-sub: #64748b;
+            --border-color: #e2e8f0;
+            --shadow-sm: 0 2px 8px rgba(16, 133, 117, 0.06);
+            --shadow-md: 0 8px 24px rgba(16, 133, 117, 0.1);
+            --shadow-lg: 0 16px 36px rgba(16, 133, 117, 0.14);
+            --radius-md: 16px;
+            --radius-lg: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* 共通コンテナ */
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+
+        /* ヘッダー・ヒーロー */
+        .hero {
+            background: linear-gradient(135deg, rgba(29, 53, 87, 0.95), rgba(16, 133, 117, 0.9)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover;
+            color: #fff;
+            padding: 4.5rem 1.25rem 3.5rem;
+            text-align: center;
+            position: relative;
+            border-bottom-left-radius: var(--radius-lg);
+            border-bottom-right-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .hero h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.3;
+            margin-bottom: 0.8rem;
+        }
+
+        .hero .subtitle {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+            margin-bottom: 1.8rem;
+        }
+
+        .location-meta {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            background: rgba(0, 0, 0, 0.25);
+            padding: 10px 20px;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+        }
+
+        .location-meta div {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* クイックナビゲーションバー */
+        .quick-nav-wrapper {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        }
+
+        .quick-nav {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding: 0.75rem 0;
+            scrollbar-width: none;
+        }
+        .quick-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+        .quick-nav a {
+            flex-shrink: 0;
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: #f1f5f9;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .quick-nav a:hover, .quick-nav a.active {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+
+        /* セクション共通 */
+        section {
+            padding: 3.5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-tag {
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 0.1em;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .section-title {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: var(--navy);
+            letter-spacing: -0.01em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 48px;
+            height: 4px;
+            background: var(--accent);
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+
+        /* カード汎用 */
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius-md);
+            padding: 1.75rem;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        /* スケジュール（タイムライン） */
+        .timeline {
+            position: relative;
+            padding-left: 28px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            bottom: 10px;
+            width: 3px;
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.75rem;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: -28px;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.65rem;
+            color: var(--primary);
+            z-index: 2;
+        }
+
+        .timeline-item.highlight .timeline-icon {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .timeline-card {
+            background: #fff;
+            padding: 1.25rem 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .timeline-time {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            background: var(--primary-light);
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.4rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+        }
+
+        .badge-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+
+        .badge-tag.bath-men {
+            background: #e0f2fe;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+        }
+
+        .badge-tag.bath-women {
+            background: #fdf2f8;
+            color: #be185d;
+            border: 1px solid #fbcfe8;
+        }
+
+        .badge-tag.bbq {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+        }
+
+        /* 交通・アクセス */
+        .access-recommend {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+            border: 2px solid #86efac;
+            border-radius: var(--radius-md);
+            padding: 1.75rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .recommend-ribbon {
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: #16a34a;
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 3px 14px;
+            border-radius: 999px;
+            letter-spacing: 0.05em;
+            box-shadow: 0 2px 6px rgba(22, 163, 74, 0.3);
+        }
+
+        .train-route-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 1.25rem;
+        }
+
+        .step-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .step-marker {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #16a34a;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .step-content {
+            flex-grow: 1;
+        }
+
+        .step-time {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #14532d;
+        }
+
+        .step-name {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1f2937;
+        }
+
+        .step-note {
+            font-size: 0.85rem;
+            color: #4b5563;
+        }
+
+        .route-connector {
+            border-left: 2px dashed #86efac;
+            margin-left: 15px;
+            height: 18px;
+        }
+
+        .other-access-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .other-access-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* 施設・お風呂 */
+        .facility-hero-card {
+            background: #fff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 2rem;
+        }
+
+        .facility-img-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4px;
+            height: 240px;
+            background: #e2e8f0;
+        }
+
+        .facility-img-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .facility-info {
+            padding: 1.75rem;
+        }
+
+        .bath-rule-box {
+            background: #eff6ff;
+            border: 2px solid #bfdbfe;
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .bath-rule-box h4 {
+            color: #1e40af;
+            font-size: 1.15rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .bath-slots {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        @media (min-width: 600px) {
+            .bath-slots {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .bath-slot-card {
+            background: #fff;
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            border: 1px solid #dbeafe;
+            text-align: center;
+        }
+
+        .bath-slot-card.men {
+            border-top: 4px solid #2563eb;
+        }
+
+        .bath-slot-card.women {
+            border-top: 4px solid #db2777;
+        }
+
+        .bath-slot-time {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin: 6px 0;
+            color: var(--navy);
+        }
+
+        /* 設備・アメニティリスト */
+        .amenity-table-wrap {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        @media (min-width: 640px) {
+            .amenity-table-wrap {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .amenity-card {
+            background: #fff;
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .amenity-card h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag-cloud span {
+            background: #f1f5f9;
+            color: #334155;
+            font-size: 0.85rem;
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-weight: 500;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* ルール & 飲食心得 */
+        .rule-card-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        @media (min-width: 640px) {
+            .rule-card-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .rule-item-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .rule-icon-circle {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--primary-light);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .rule-item-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--navy);
+        }
+
+        .rule-item-card p {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+            line-height: 1.6;
+        }
+
+        /* 部屋割りくじ引きツール */
+        .lottery-section {
+            background: linear-gradient(135deg, #fdfbf7 0%, #f7f9fb 100%);
+            border: 2px dashed #cbd5e1;
+            border-radius: var(--radius-lg);
+            padding: 2.25rem 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .lottery-box {
+            background: #fff;
+            border-radius: var(--radius-md);
+            padding: 1.75rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        .textarea-custom {
+            width: 100%;
+            height: 120px;
+            border: 1.5px solid var(--border-color);
+            border-radius: 12px;
+            padding: 12px 16px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            resize: vertical;
+            transition: border-color 0.2s;
+        }
+
+        .textarea-custom:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(16, 133, 117, 0.15);
+        }
+
+        .lottery-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 1.25rem 0;
+            align-items: center;
+        }
+
+        .btn-lottery {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-warm) 100%);
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-radius: 999px;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(224, 122, 95, 0.35);
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-lottery:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(224, 122, 95, 0.45);
+        }
+
+        .btn-lottery:active {
+            transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid var(--border-color);
+            padding: 10px 18px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-secondary:hover {
+            background: #e2e8f0;
+        }
+
+        .room-result-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .room-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 1.2rem;
+            border: 1px solid #e2e8f0;
+            position: relative;
+            transition: transform 0.2s;
+        }
+
+        .room-card.populated {
+            border-color: #99f6e4;
+            background: #f0fdfa;
+        }
+
+        .room-num {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            background: #ccfbf1;
+            padding: 2px 8px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .room-members {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--navy);
+            min-height: 28px;
+        }
+
+        /* 持ち物チェックリスト */
+        .checklist-wrap {
+            background: #fff;
+            border-radius: var(--radius-md);
+            padding: 1.75rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        @media (min-width: 600px) {
+            .checklist-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border-radius: 10px;
+            background: #f8fafc;
+            border: 1px solid #f1f5f9;
+            cursor: pointer;
+            transition: background 0.2s;
+            user-select: none;
+        }
+
+        .check-item:hover {
+            background: #f1f5f9;
+        }
+
+        .check-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
+        .check-item.done {
+            text-decoration: line-through;
+            color: #94a3b8;
+            background: #f1f5f9;
+        }
+
+        /* Discord バナー */
+        .discord-banner {
+            background: linear-gradient(135deg, #5865F2 0%, #4752c4 100%);
+            color: #fff;
+            border-radius: var(--radius-md);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 16px;
+            box-shadow: 0 8px 24px rgba(88, 101, 242, 0.25);
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 640px) {
+            .discord-banner {
+                flex-direction: row;
+                text-align: left;
+                justify-content: space-between;
+            }
+        }
+
+        .btn-discord {
+            background: #fff;
+            color: #5865F2;
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            white-space: nowrap;
+        }
+
+        .btn-discord:hover {
+            transform: translateY(-2px);
+        }
+
+        /* ボタン群 */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+        }
+
+        /* フッター */
+        footer {
+            background: var(--navy);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 3rem 1.25rem 2.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヒーローセクション -->
+    <header class="hero">
+        <div class="badge-pill">
+            <i class="fa-solid fa-sparkles"></i> 2026年 開催
+        </div>
+        <h1>タスクシュート協会<br>トレーナー合宿 2026</h1>
+        <p class="subtitle">時間を愛おしむ仲間と語り、繋がりを深める特別な2日間</p>
+        
+        <div class="location-meta">
+            <div><i class="fa-solid fa-hotel"></i> 温泉宿 伊豆華の舞（全館貸切）</div>
+            <div><i class="fa-solid fa-location-dot"></i> 静岡県伊東市富戸</div>
+            <div><i class="fa-solid fa-hot-tub-person"></i> 天然美肌温泉</div>
+        </div>
+    </header>
+
+    <!-- クイックナビゲーションバー -->
+    <div class="quick-nav-wrapper">
+        <div class="container">
+            <nav class="quick-nav">
+                <a href="#schedule"><i class="fa-regular fa-clock"></i> スケジュール</a>
+                <a href="#access"><i class="fa-solid fa-train-subway"></i> 交通・アクセス</a>
+                <a href="#bath"><i class="fa-solid fa-hot-tub-person"></i> 温泉・入浴時間</a>
+                <a href="#facility"><i class="fa-solid fa-house-chimney"></i> 館内・客室設備</a>
+                <a href="#rules"><i class="fa-solid fa-utensils"></i> 飲食・心得</a>
+                <a href="#lottery"><i class="fa-solid fa-dice"></i> 部屋割りくじ</a>
+                <a href="#checklist"><i class="fa-solid fa-list-check"></i> 持ち物</a>
+            </nav>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- タイムスケジュール -->
+        <section id="schedule">
+            <div class="section-header">
+                <span class="section-tag">Schedule</span>
+                <h2 class="section-title">タイムスケジュール</h2>
+            </div>
+
+            <div class="card">
+                <div class="timeline">
+                    <!-- 15:00 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fa-solid fa-key"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-time"><i class="fa-regular fa-clock"></i> 15:00 〜 15:30</span>
+                            <h3 class="timeline-title">集合・部屋決め・荷解き</h3>
+                            <p class="timeline-desc">宿に到着後、まずはみんなで部屋割りを行います。下の「部屋割りくじ」ツールで楽しく部屋を決定！荷物を置いて一息つきましょう。</p>
+                        </div>
+                    </div>
+
+                    <!-- 15:30 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-time"><i class="fa-regular fa-clock"></i> 15:30 〜 17:00</span>
+                            <h3 class="timeline-title">合宿ワーク</h3>
+                            <p class="timeline-desc">トレーナー同士の知見共有、今後の展望やタスクシュートの探求ワーク。開放感あるリビングやプロジェクターを活用して深め合います。</p>
+                        </div>
+                    </div>
+
+                    <!-- 17:00 -->
+                    <div class="timeline-item highlight">
+                        <div class="timeline-icon"><i class="fa-solid fa-fire"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-time"><i class="fa-regular fa-clock"></i> 17:00 〜 19:00</span>
+                            <h3 class="timeline-title">屋根付きテラス バーベキュー</h3>
+                            <p class="timeline-desc">天候を気にせず楽しめる屋根付きテラスでBBQ！美味しいお肉とお酒で乾杯しましょう。</p>
+                            <span class="badge-tag bath-men"><i class="fa-solid fa-bath"></i> 男子交代でお風呂タイム</span>
+                        </div>
+                    </div>
+
+                    <!-- 19:00 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fa-solid fa-comments"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-time"><i class="fa-regular fa-clock"></i> 19:00 〜 21:00</span>
+                            <h3 class="timeline-title">食事団らん ＆ 決意発表</h3>
+                            <p class="timeline-desc">あたたかいリビングに移動し、食事を囲みながら語らいの時間。それぞれの想いやこれからの「決意発表」を共有します。</p>
+                        </div>
+                    </div>
+
+                    <!-- 21:00 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fa-solid fa-moon"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-time"><i class="fa-regular fa-clock"></i> 21:00 〜 深夜</span>
+                            <h3 class="timeline-title">フリータイム（自由時間）</h3>
+                            <p class="timeline-desc">シミュレーションゴルフ、カラオケ、ボードゲーム、夜の語り合いなど自由に過ごせます。</p>
+                            <span class="badge-tag bath-women"><i class="fa-solid fa-bath"></i> 女子お風呂タイム（天然温泉）</span>
+                        </div>
+                    </div>
+
+                    <!-- 翌朝 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="fa-regular fa-sun"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-time"><i class="fa-regular fa-clock"></i> 2日目 〜 10:00</span>
+                            <h3 class="timeline-title">各自朝食 & チェックアウト</h3>
+                            <p class="timeline-desc">朝食は各自ご用意いただいたものを自由に召し上がってください。10:00 完全チェックアウトとなります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 交通・アクセス -->
+        <section id="access">
+            <div class="section-header">
+                <span class="section-tag">Access</span>
+                <h2 class="section-title">交通・アクセス案内</h2>
+            </div>
+
+            <!-- おすすめルート -->
+            <div class="access-recommend">
+                <span class="recommend-ribbon"><i class="fa-solid fa-star"></i> 最も便利でおすすめのルート</span>
+                <h3 style="font-size: 1.25rem; font-weight: 800; color: #14532d; margin-top: 0.5rem;">
+                    東京駅より 直通特急「踊り子9号」ルート
+                </h3>
+                <p style="font-size: 0.9rem; color: #166534; margin-top: 4px;">
+                    東京駅から乗り換えなしで伊豆高原駅へ直通。駅前からバスで8分です。
+                </p>
+
+                <div class="train-route-steps">
+                    <div class="step-row">
+                        <div class="step-marker">1</div>
+                        <div class="step-content">
+                            <div class="step-time">12:00 発</div>
+                            <div class="step-name">東京駅 出発（特急「踊り子9号」乗車）</div>
+                            <div class="step-note">※熱海駅経由（熱海 13:23発）</div>
+                        </div>
+                    </div>
+
+                    <div class="route-connector"></div>
+
+                    <div class="step-row">
+                        <div class="step-marker">2</div>
+                        <div class="step-content">
+                            <div class="step-time">14:09 着</div>
+                            <div class="step-name">伊豆高原駅 到着</div>
+                            <div class="step-note">バス乗り場へ移動（少し時間があるのでお手洗い・お買い物可能）</div>
+                        </div>
+                    </div>
+
+                    <div class="route-connector"></div>
+
+                    <div class="step-row">
+                        <div class="step-marker">3</div>
+                        <div class="step-content">
+                            <div class="step-time">14:45 発</div>
+                            <div class="step-name">東海バス「シャボテン公園行き」乗車</div>
+                            <div class="step-note">伊豆高原駅前バス停より発車</div>
+                        </div>
+                    </div>
+
+                    <div class="route-connector"></div>
+
+                    <div class="step-row">
+                        <div class="step-marker">4</div>
+                        <div class="step-content">
+                            <div class="step-time">14:53 着</div>
+                            <div class="step-name">「大室高原八丁目」バス停 下車</div>
+                            <div class="step-note">バス停より徒歩わずか2分で宿に到着！</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 10px;">
+                    <a href="https://maps.google.com/?q=温泉宿+伊豆華の舞" target="_blank" rel="noopener" class="btn-primary" style="background: #16a34a;">
+                        <i class="fa-solid fa-map-location-dot"></i> Googleマップで道順を開く
+                    </a>
+                </div>
+            </div>
+
+            <!-- その他アクセス方法 -->
+            <div class="other-access-grid">
+                <div class="card">
+                    <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 0.75rem;">
+                        <i class="fa-solid fa-train"></i> 熱海乗り換え／普通列車の場合
+                    </h4>
+                    <p style="font-size: 0.9rem; color: var(--text-sub);">
+                        東京駅を経由しない方、または新幹線等で熱海まで来られる場合は、<strong>熱海駅で乗り換え</strong>となります。<br>
+                        ・熱海駅 13:23発の特急「踊り子9号」に途中乗車可能。<br>
+                        ・特急を使わずに、JR伊東線（普通列車）で伊豆高原駅まで向かうことも可能です。
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 0.75rem;">
+                        <i class="fa-solid fa-car"></i> お車でお越しの場合
+                    </h4>
+                    <p style="font-size: 0.9rem; color: var(--text-sub);">
+                        東名高速 〜 厚木IC 〜 小田原厚木道路経由、熱海より国道135号で約60分。<br>
+                        <strong>ナビ設定住所：</strong><br>
+                        静岡県伊東市富戸1317-4573<br>
+                        ※宿敷地内に無料駐車場がございます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 温泉 & お風呂案内 -->
+        <section id="bath">
+            <div class="section-header">
+                <span class="section-tag">Onsen & Bath</span>
+                <h2 class="section-title">温泉・入浴ルール</h2>
+            </div>
+
+            <div class="bath-rule-box">
+                <h4><i class="fa-solid fa-circle-info"></i> 天然温泉は1つのため、男女入替制です</h4>
+                <p style="font-size: 0.92rem; color: #1e3a8a;">
+                    館内の天然温泉（美肌の湯）は1箇所のため、時間帯を男女で分けております。スムーズな入浴にご協力をお願いいたします。
+                </p>
+
+                <div class="bath-slots">
+                    <div class="bath-slot-card men">
+                        <span style="font-size: 0.85rem; font-weight: 700; color: #2563eb;"><i class="fa-solid fa-mars"></i> 男子 入浴時間</span>
+                        <div class="bath-slot-time">17:00 〜 19:00</div>
+                        <p style="font-size: 0.85rem; color: #64748b;">バーベキューの合間に交代でどうぞ</p>
+                    </div>
+
+                    <div class="bath-slot-card women">
+                        <span style="font-size: 0.85rem; font-weight: 700; color: #db2777;"><i class="fa-solid fa-venus"></i> 女子 入浴時間</span>
+                        <div class="bath-slot-time">21:00 〜 深夜</div>
+                        <p style="font-size: 0.85rem; color: #64748b;">団らん終了後、ゆったり温泉タイム</p>
+                    </div>
+                </div>
+
+                <div style="background: #ffffff; border-radius: 10px; padding: 12px 16px; margin-top: 1.25rem; font-size: 0.88rem; color: #1e293b; border-left: 4px solid #f59e0b;">
+                    <strong>💡 客室のお風呂・シャワーについて：</strong><br>
+                    温泉ではありませんが、<strong>各部屋の内風呂・シャワーは時間制限なく24時間いつでもご自由にお使いいただけます！</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- 宿泊施設 & 客室設備 -->
+        <section id="facility">
+            <div class="section-header">
+                <span class="section-tag">Facility</span>
+                <h2 class="section-title">宿泊施設・客室設備</h2>
+            </div>
+
+            <div class="facility-hero-card">
+                <div class="facility-img-grid">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="温泉・宿のイメージ">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80" alt="BBQ">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400&q=80" alt="リビング">
+                </div>
+                <div class="facility-info">
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px;">
+                        <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--navy);">
+                            温泉宿 伊豆華の舞（1棟貸切り）
+                        </h3>
+                        <a href="https://izuhananomai.com/" target="_blank" rel="noopener" class="btn-secondary" style="font-size: 0.8rem;">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> 宿の公式サイト
+                        </a>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-sub); margin-top: 6px;">
+                        洋室9室（最大25名対応）のプライベート空間。天然温泉、屋根付きBBQテラス、光が差し込む大開口リビング、プロジェクター、無料シミュレーションゴルフ、カラオケなど充実した設備が整っています。
+                    </p>
+                </div>
+            </div>
+
+            <div class="amenity-table-wrap">
+                <!-- 客室設備 -->
+                <div class="amenity-card">
+                    <h4><i class="fa-solid fa-bed" style="color: var(--primary);"></i> 客室設備</h4>
+                    <div class="tag-cloud">
+                        <span>専用バス</span>
+                        <span>専用シャワー</span>
+                        <span>洗面台</span>
+                        <span>ウォッシュレットトイレ</span>
+                        <span>テレビ</span>
+                        <span>冷暖房エアコン</span>
+                        <span>客室冷蔵庫</span>
+                        <span>高速無線Wi-Fi</span>
+                        <span>ヘアドライヤー</span>
+                        <span>ドレッサー</span>
+                        <span>ハンガー</span>
+                    </div>
+                </div>
+
+                <!-- アメニティ -->
+                <div class="amenity-card">
+                    <h4><i class="fa-solid fa-pump-soap" style="color: var(--accent);"></i> アメニティ一覧</h4>
+                    <div class="tag-cloud">
+                        <span>バスタオル</span>
+                        <span>フェイスタオル</span>
+                        <span>バスマット</span>
+                        <span>歯磨きセット</span>
+                        <span>うがい用コップ</span>
+                        <span>シャンプー</span>
+                        <span>コンディショナー</span>
+                        <span>ボディーソープ</span>
+                        <span>ハンドソープ</span>
+                        <span>ティッシュペーパー</span>
+                        <span>トイレットペーパー</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 飲食・差し入れ・当日ルール -->
+        <section id="rules">
+            <div class="section-header">
+                <span class="section-tag">Rules & Food</span>
+                <h2 class="section-title">飲食・差し入れ & 当日ルール</h2>
+            </div>
+
+            <div class="rule-card-grid">
+                <!-- 飲み物について -->
+                <div class="rule-item-card">
+                    <div class="rule-icon-circle">
+                        <i class="fa-solid fa-beer-mug-empty"></i>
+                    </div>
+                    <h4>飲み物のご案内</h4>
+                    <p>
+                        宿には<strong>水・コーヒー・ビール</strong>の準備がございます！<br>
+                        これら以外のお好みの飲み物（お茶、ジュース、ワイン、日本酒、ハイボールなど）は各自でご自由にご持参ください。
+                    </p>
+                </div>
+
+                <!-- 食事について -->
+                <div class="rule-item-card">
+                    <div class="rule-icon-circle" style="background: #fef3c7; color: #b45309;">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h4>食事・朝食のご案内</h4>
+                    <p>
+                        ・1日目の夕食は<strong>屋根付きBBQ</strong>を予定しています。<br>
+                        ・<strong>2日目の朝食は各自でご用意ください。</strong>（事前にパンやおにぎり等をご購入いただくのがスムーズです）
+                    </p>
+                </div>
+
+                <!-- 差し入れについて -->
+                <div class="rule-item-card">
+                    <div class="rule-icon-circle" style="background: #fdf2f8; color: #db2777;">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h4>差し入れ大歓迎！（お菓子控えめ推奨）</h4>
+                    <p>
+                        差し入れは大歓迎です！<br>
+                        ただし、皆さん大人でお菓子は余ってしまいがちな傾向があります。<strong>お菓子は控えめにしていただくか、差し入れなしでも全く問題ございません！</strong>
+                    </p>
+                </div>
+
+                <!-- コミュニケーション & ゲーム -->
+                <div class="rule-item-card">
+                    <div class="rule-icon-circle" style="background: #e0e7ff; color: #4338ca;">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h4>ゲームなどの持ち込み大歓迎！</h4>
+                    <p>
+                        合宿の大きな目的は仲間との交流・コミュニケーションです！みんなでワイワイ楽しめるボードゲームやカードゲームなどがあればぜひお持ち寄りください。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Discord バナー -->
+            <div class="discord-banner">
+                <div>
+                    <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 6px;">
+                        <i class="fa-brands fa-discord"></i> 当日遅刻・トラブル時のご連絡
+                    </h3>
+                    <p style="font-size: 0.9rem; opacity: 0.95;">
+                        電車の遅延や当日の遅刻、緊急の連絡は Discord の合宿専用チャンネルにお願いいたします。
+                    </p>
+                </div>
+                <a href="https://discord.com/" target="_blank" rel="noopener" class="btn-discord">
+                    <i class="fa-brands fa-discord"></i> Discordを開く
+                </a>
+            </div>
+        </section>
+
+        <!-- 部屋割りくじ引きツール -->
+        <section id="lottery">
+            <div class="section-header">
+                <span class="section-tag">Interactive Tool</span>
+                <h2 class="section-title">部屋割りくじ引きツール</h2>
+            </div>
+
+            <div class="lottery-section">
+                <div class="lottery-box">
+                    <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--navy); margin-bottom: 0.5rem;">
+                        <i class="fa-solid fa-shuffle" style="color: var(--accent);"></i> 到着後の部屋決めルーレット
+                    </h3>
+                    <p style="font-size: 0.88rem; color: var(--text-sub); margin-bottom: 1rem;">
+                        宿到着後の部屋割りをWeb上でシャッフル抽選できます！参加者の名前を入力して「くじを引く」ボタンを押してください。
+                    </p>
+
+                    <div>
+                        <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-main); display: block; margin-bottom: 6px;">
+                            参加者名（改行区切りで入力）
+                        </label>
+                        <textarea id="lotteryParticipants" class="textarea-custom" placeholder="参加者1
+参加者2
+参加者3
+参加者4
+参加者5
+参加者6
+参加者7
+参加者8"></textarea>
+                    </div>
+
+                    <div class="lottery-controls">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <label style="font-size: 0.85rem; font-weight: 700;">部屋数:</label>
+                            <select id="roomCount" style="padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border-color); font-weight: 600;">
+                                <option value="4">4部屋</option>
+                                <option value="5">5部屋</option>
+                                <option value="6">6部屋</option>
+                                <option value="7">7部屋</option>
+                                <option value="8">8部屋</option>
+                                <option value="9" selected>9部屋（全室）</option>
+                            </select>
+                        </div>
+
+                        <button id="btnDrawLottery" class="btn-lottery">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> 部屋割りくじを引く！
+                        </button>
+
+                        <button id="btnResetLottery" class="btn-secondary">
+                            <i class="fa-solid fa-rotate-left"></i> リセット
+                        </button>
+
+                        <button id="btnCopyResult" class="btn-secondary" style="display: none;">
+                            <i class="fa-regular fa-copy"></i> 結果をコピー
+                        </button>
+                    </div>
+
+                    <!-- 部屋割り結果コンテナ -->
+                    <div id="roomResultGrid" class="room-result-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 持ち物チェックリスト -->
+        <section id="checklist">
+            <div class="section-header">
+                <span class="section-tag">Checklist</span>
+                <h2 class="section-title">持ち物チェックリスト</h2>
+            </div>
+
+            <div class="checklist-wrap">
+                <p style="font-size: 0.88rem; color: var(--text-sub); margin-bottom: 1.25rem;">
+                    チェックを入れるとブラウザに自動保存されます。出発前の最終確認にご活用ください。
+                </p>
+
+                <div class="checklist-grid" id="checklistContainer">
+                    <!-- JSで動的生成 -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">一般社団法人タスクシュート協会</div>
+            <p style="margin-bottom: 1rem;">トレーナー合宿 2026 @ 温泉宿 伊豆華の舞</p>
+            <p style="font-size: 0.8rem; opacity: 0.7;">
+                〒413-0231 静岡県伊東市富戸1317-4573 / TEL: 0557-52-3063
+            </p>
+        </div>
+    </footer>
+
+    <!-- スクリプト -->
+    <script>
+        // 持ち物リスト定義
+        const defaultChecklist = [
+            { id: 'item-1', text: '着替え・下着・パジャマ', checked: false },
+            { id: 'item-2', text: 'スマホ・PC・充電器・モバイルバッテリー', checked: false },
+            { id: 'item-3', text: '2日目の朝食（おにぎり・パンなど）', checked: false },
+            { id: 'item-4', text: 'お好みの飲み物（水・珈琲・ビール以外）', checked: false },
+            { id: 'item-5', text: '筆記用具・ノート（ワーク用）', checked: false },
+            { id: 'item-6', text: '健康保険証・常備薬', checked: false },
+            { id: 'item-7', text: 'みんなで遊べるゲーム（任意・大歓迎！）', checked: false },
+            { id: 'item-8', text: '差し入れ（お菓子控えめ・手ぶらも歓迎！）', checked: false }
+        ];
+
+        // チェックリストの初期化 & LocalStorage対応
+        function initChecklist() {
+            const container = document.getElementById('checklistContainer');
+            const saved = localStorage.getItem('camp2026_checklist');
+            const items = saved ? JSON.parse(saved) : defaultChecklist;
+
+            container.innerHTML = '';
+            items.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = `check-item ${item.checked ? 'done' : ''}`;
+                div.innerHTML = `
+                    <input type="checkbox" id="${item.id}" ${item.checked ? 'checked' : ''}>
+                    <label for="${item.id}" style="cursor:pointer; flex-grow:1;">${item.text}</label>
+                `;
+
+                div.addEventListener('click', (e) => {
+                    if (e.target.tagName !== 'INPUT') {
+                        const cb = div.querySelector('input');
+                        cb.checked = !cb.checked;
+                    }
+                    const isChecked = div.querySelector('input').checked;
+                    items[index].checked = isChecked;
+                    div.classList.toggle('done', isChecked);
+                    localStorage.setItem('camp2026_checklist', JSON.stringify(items));
+                });
+
+                container.appendChild(div);
+            });
+        }
+
+        // 部屋割りくじ引きロジック
+        function initLottery() {
+            const btnDraw = document.getElementById('btnDrawLottery');
+            const btnReset = document.getElementById('btnResetLottery');
+            const btnCopy = document.getElementById('btnCopyResult');
+            const textarea = document.getElementById('lotteryParticipants');
+            const roomSelect = document.getElementById('roomCount');
+            const resultGrid = document.getElementById('roomResultGrid');
+
+            // デフォルトの部屋枠を描画
+            function renderEmptyRooms(count) {
+                resultGrid.innerHTML = '';
+                for (let i = 1; i <= count; i++) {
+                    const card = document.createElement('div');
+                    card.className = 'room-card';
+                    card.id = `room-${i}`;
+                    card.innerHTML = `
+                        <div class="room-num"><i class="fa-solid fa-door-closed"></i> 部屋 ${i}</div>
+                        <div class="room-members" style="color: #94a3b8; font-weight: normal; font-size: 0.9rem;">未定</div>
+                    `;
+                    resultGrid.appendChild(card);
+                }
+            }
+
+            renderEmptyRooms(parseInt(roomSelect.value, 10));
+
+            roomSelect.addEventListener('change', () => {
+                renderEmptyRooms(parseInt(roomSelect.value, 10));
+                btnCopy.style.display = 'none';
+            });
+
+            btnReset.addEventListener('click', () => {
+                renderEmptyRooms(parseInt(roomSelect.value, 10));
+                btnCopy.style.display = 'none';
+            });
+
+            btnDraw.addEventListener('click', () => {
+                const text = textarea.value.trim();
+                const names = text ? text.split('\n').map(n => n.trim()).filter(n => n.length > 0) : [];
+                
+                if (names.length === 0) {
+                    alert('参加者の名前を1行に1人ずつ入力してください！');
+                    textarea.focus();
+                    return;
+                }
+
+                const numRooms = parseInt(roomSelect.value, 10);
+                // シャッフル（Fisher-Yates）
+                const shuffled = [...names];
+                for (let i = shuffled.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                }
+
+                // 部屋に配分
+                const rooms = Array.from({ length: numRooms }, () => []);
+                shuffled.forEach((name, idx) => {
+                    rooms[idx % numRooms].push(name);
+                });
+
+                // アニメーション演出つき描画
+                resultGrid.innerHTML = '';
+                rooms.forEach((members, idx) => {
+                    const roomIdx = idx + 1;
+                    const card = document.createElement('div');
+                    card.className = 'room-card populated';
+                    const memberText = members.length > 0 ? members.join('、 ') : '（空き部屋）';
+                    
+                    card.innerHTML = `
+                        <div class="room-num"><i class="fa-solid fa-door-open"></i> 部屋 ${roomIdx}</div>
+                        <div class="room-members">${memberText}</div>
+                    `;
+                    resultGrid.appendChild(card);
+                });
+
+                btnCopy.style.display = 'inline-flex';
+            });
+
+            btnCopy.addEventListener('click', () => {
+                const cards = resultGrid.querySelectorAll('.room-card');
+                let copyText = '【トレーナー合宿 2026 部屋割り結果】\n';
+                cards.forEach(card => {
+                    const num = card.querySelector('.room-num').innerText.trim();
+                    const members = card.querySelector('.room-members').innerText.trim();
+                    copyText += `${num}: ${members}\n`;
+                });
+
+                navigator.clipboard.writeText(copyText).then(() => {
+                    alert('部屋割り結果をクリップボードにコピーしました！Discord等に貼り付けられます。');
+                }).catch(() => {
+                    alert('コピーに失敗しました。手動でコピーしてください。');
+                });
+            });
+        }
+
+        // 初期化実行
+        document.addEventListener('DOMContentLoaded', () => {
+            initChecklist();
+            initLottery();
+        });
+    </script>
+</body>
+</html>

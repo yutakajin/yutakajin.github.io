@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "「タスクシュート迷子」になったとき、どう自分を取り戻すのかという現在の課題【ユタカジン】",
+    "url": "https://note.com/fildstraycats/n/nccf90ceefd26?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/316697383/rectangle_large_type_2_e2e812d0ca714a94e23b0cdb21d4063c.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年9月23日 08:44",
+    "tags": []
+},
+    
+    {
     "title": "うれしい毎日が",
     "url": "https://note.com/fooglebird/n/n5811ad39f24b?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/316245639/rectangle_large_type_2_2bca0c5644274bcdae671976351658cb.png?width=1280",

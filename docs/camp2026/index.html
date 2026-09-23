@@ -1,4 +1,3 @@
-<!-- docs/camp2026/index.html is synced from camp2026/index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -590,74 +589,6 @@
             line-height: 1.6;
         }
 
-        /* 部屋割りくじ引きツール */
-        .lottery-section {
-            background: linear-gradient(135deg, #fdfbf7 0%, #f7f9fb 100%);
-            border: 2px dashed #cbd5e1;
-            border-radius: var(--radius-lg);
-            padding: 2.25rem 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .lottery-box {
-            background: #fff;
-            border-radius: var(--radius-md);
-            padding: 1.75rem;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-color);
-        }
-
-        .textarea-custom {
-            width: 100%;
-            height: 120px;
-            border: 1.5px solid var(--border-color);
-            border-radius: 12px;
-            padding: 12px 16px;
-            font-size: 0.95rem;
-            font-family: inherit;
-            resize: vertical;
-            transition: border-color 0.2s;
-        }
-
-        .textarea-custom:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(16, 133, 117, 0.15);
-        }
-
-        .lottery-controls {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin: 1.25rem 0;
-            align-items: center;
-        }
-
-        .btn-lottery {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-warm) 100%);
-            color: #fff;
-            border: none;
-            padding: 12px 28px;
-            font-size: 1.05rem;
-            font-weight: 700;
-            border-radius: 999px;
-            cursor: pointer;
-            box-shadow: 0 4px 14px rgba(224, 122, 95, 0.35);
-            transition: all 0.2s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .btn-lottery:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(224, 122, 95, 0.45);
-        }
-
-        .btn-lottery:active {
-            transform: translateY(0);
-        }
-
         .btn-secondary {
             background: #f1f5f9;
             color: #475569;
@@ -675,46 +606,6 @@
 
         .btn-secondary:hover {
             background: #e2e8f0;
-        }
-
-        .room-result-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-
-        .room-card {
-            background: #f8fafc;
-            border-radius: 12px;
-            padding: 1.2rem;
-            border: 1px solid #e2e8f0;
-            position: relative;
-            transition: transform 0.2s;
-        }
-
-        .room-card.populated {
-            border-color: #99f6e4;
-            background: #f0fdfa;
-        }
-
-        .room-num {
-            font-family: 'Outfit', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: var(--primary-dark);
-            background: #ccfbf1;
-            padding: 2px 8px;
-            border-radius: 6px;
-            display: inline-block;
-            margin-bottom: 8px;
-        }
-
-        .room-members {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--navy);
-            min-height: 28px;
         }
 
         /* 持ち物チェックリスト */
@@ -881,7 +772,6 @@
                 <a href="#bath"><i class="fa-solid fa-hot-tub-person"></i> 温泉・入浴時間</a>
                 <a href="#facility"><i class="fa-solid fa-house-chimney"></i> 館内・客室設備</a>
                 <a href="#rules"><i class="fa-solid fa-utensils"></i> 飲食・心得</a>
-                <a href="#lottery"><i class="fa-solid fa-dice"></i> 部屋割りくじ</a>
                 <a href="#checklist"><i class="fa-solid fa-list-check"></i> 持ち物</a>
             </nav>
         </div>
@@ -904,7 +794,7 @@
                         <div class="timeline-card">
                             <span class="timeline-time"><i class="fa-regular fa-clock"></i> 15:00 〜 15:30</span>
                             <h3 class="timeline-title">集合・部屋決め・荷解き</h3>
-                            <p class="timeline-desc">宿に到着後、まずはみんなで部屋割りを行います。下の「部屋割りくじ」ツールで楽しく部屋を決定！荷物を置いて一息つきましょう。</p>
+                            <p class="timeline-desc">宿に到着後、まずはみんなで部屋割りを行います。部屋が決まったら荷解きをして一息つきましょう。</p>
                         </div>
                     </div>
 
@@ -1231,68 +1121,6 @@
             </div>
         </section>
 
-        <!-- 部屋割りくじ引きツール -->
-        <section id="lottery">
-            <div class="section-header">
-                <span class="section-tag">Interactive Tool</span>
-                <h2 class="section-title">部屋割りくじ引きツール</h2>
-            </div>
-
-            <div class="lottery-section">
-                <div class="lottery-box">
-                    <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--navy); margin-bottom: 0.5rem;">
-                        <i class="fa-solid fa-shuffle" style="color: var(--accent);"></i> 到着後の部屋決めルーレット
-                    </h3>
-                    <p style="font-size: 0.88rem; color: var(--text-sub); margin-bottom: 1rem;">
-                        宿到着後の部屋割りをWeb上でシャッフル抽選できます！参加者の名前を入力して「くじを引く」ボタンを押してください。
-                    </p>
-
-                    <div>
-                        <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-main); display: block; margin-bottom: 6px;">
-                            参加者名（改行区切りで入力）
-                        </label>
-                        <textarea id="lotteryParticipants" class="textarea-custom" placeholder="参加者1
-参加者2
-参加者3
-参加者4
-参加者5
-参加者6
-参加者7
-参加者8"></textarea>
-                    </div>
-
-                    <div class="lottery-controls">
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <label style="font-size: 0.85rem; font-weight: 700;">部屋数:</label>
-                            <select id="roomCount" style="padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border-color); font-weight: 600;">
-                                <option value="4">4部屋</option>
-                                <option value="5">5部屋</option>
-                                <option value="6">6部屋</option>
-                                <option value="7">7部屋</option>
-                                <option value="8">8部屋</option>
-                                <option value="9" selected>9部屋（全室）</option>
-                            </select>
-                        </div>
-
-                        <button id="btnDrawLottery" class="btn-lottery">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i> 部屋割りくじを引く！
-                        </button>
-
-                        <button id="btnResetLottery" class="btn-secondary">
-                            <i class="fa-solid fa-rotate-left"></i> リセット
-                        </button>
-
-                        <button id="btnCopyResult" class="btn-secondary" style="display: none;">
-                            <i class="fa-regular fa-copy"></i> 結果をコピー
-                        </button>
-                    </div>
-
-                    <!-- 部屋割り結果コンテナ -->
-                    <div id="roomResultGrid" class="room-result-grid"></div>
-                </div>
-            </div>
-        </section>
-
         <!-- 持ち物チェックリスト -->
         <section id="checklist">
             <div class="section-header">
@@ -1368,105 +1196,9 @@
             });
         }
 
-        // 部屋割りくじ引きロジック
-        function initLottery() {
-            const btnDraw = document.getElementById('btnDrawLottery');
-            const btnReset = document.getElementById('btnResetLottery');
-            const btnCopy = document.getElementById('btnCopyResult');
-            const textarea = document.getElementById('lotteryParticipants');
-            const roomSelect = document.getElementById('roomCount');
-            const resultGrid = document.getElementById('roomResultGrid');
-
-            // デフォルトの部屋枠を描画
-            function renderEmptyRooms(count) {
-                resultGrid.innerHTML = '';
-                for (let i = 1; i <= count; i++) {
-                    const card = document.createElement('div');
-                    card.className = 'room-card';
-                    card.id = `room-${i}`;
-                    card.innerHTML = `
-                        <div class="room-num"><i class="fa-solid fa-door-closed"></i> 部屋 ${i}</div>
-                        <div class="room-members" style="color: #94a3b8; font-weight: normal; font-size: 0.9rem;">未定</div>
-                    `;
-                    resultGrid.appendChild(card);
-                }
-            }
-
-            renderEmptyRooms(parseInt(roomSelect.value, 10));
-
-            roomSelect.addEventListener('change', () => {
-                renderEmptyRooms(parseInt(roomSelect.value, 10));
-                btnCopy.style.display = 'none';
-            });
-
-            btnReset.addEventListener('click', () => {
-                renderEmptyRooms(parseInt(roomSelect.value, 10));
-                btnCopy.style.display = 'none';
-            });
-
-            btnDraw.addEventListener('click', () => {
-                const text = textarea.value.trim();
-                const names = text ? text.split('\n').map(n => n.trim()).filter(n => n.length > 0) : [];
-                
-                if (names.length === 0) {
-                    alert('参加者の名前を1行に1人ずつ入力してください！');
-                    textarea.focus();
-                    return;
-                }
-
-                const numRooms = parseInt(roomSelect.value, 10);
-                // シャッフル（Fisher-Yates）
-                const shuffled = [...names];
-                for (let i = shuffled.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-                }
-
-                // 部屋に配分
-                const rooms = Array.from({ length: numRooms }, () => []);
-                shuffled.forEach((name, idx) => {
-                    rooms[idx % numRooms].push(name);
-                });
-
-                // アニメーション演出つき描画
-                resultGrid.innerHTML = '';
-                rooms.forEach((members, idx) => {
-                    const roomIdx = idx + 1;
-                    const card = document.createElement('div');
-                    card.className = 'room-card populated';
-                    const memberText = members.length > 0 ? members.join('、 ') : '（空き部屋）';
-                    
-                    card.innerHTML = `
-                        <div class="room-num"><i class="fa-solid fa-door-open"></i> 部屋 ${roomIdx}</div>
-                        <div class="room-members">${memberText}</div>
-                    `;
-                    resultGrid.appendChild(card);
-                });
-
-                btnCopy.style.display = 'inline-flex';
-            });
-
-            btnCopy.addEventListener('click', () => {
-                const cards = resultGrid.querySelectorAll('.room-card');
-                let copyText = '【トレーナー合宿 2026 部屋割り結果】\n';
-                cards.forEach(card => {
-                    const num = card.querySelector('.room-num').innerText.trim();
-                    const members = card.querySelector('.room-members').innerText.trim();
-                    copyText += `${num}: ${members}\n`;
-                });
-
-                navigator.clipboard.writeText(copyText).then(() => {
-                    alert('部屋割り結果をクリップボードにコピーしました！Discord等に貼り付けられます。');
-                }).catch(() => {
-                    alert('コピーに失敗しました。手動でコピーしてください。');
-                });
-            });
-        }
-
         // 初期化実行
         document.addEventListener('DOMContentLoaded', () => {
             initChecklist();
-            initLottery();
         });
     </script>
 </body>

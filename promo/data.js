@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "計画性も準備も",
+    "url": "https://note.com/akyd/n/n013558160c99?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/316825621/rectangle_large_type_2_cdaeefd86a214fc0b37bbef9bec6e7ac.png?width=1280",
+    "author": "akyd",
+    "date": "2026年9月28日 22:05",
+    "tags": []
+},
+    
+    {
     "title": "「タスクシュート迷子」になったとき、どう自分を取り戻すのかという現在の課題【ユタカジン】",
     "url": "https://note.com/fildstraycats/n/nccf90ceefd26?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/316697383/rectangle_large_type_2_e2e812d0ca714a94e23b0cdb21d4063c.png?width=1280",

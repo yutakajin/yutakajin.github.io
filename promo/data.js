@@ -1,5 +1,14 @@
 const articles = [
     {
+    "title": "ダイエットが失敗する理由は「運動不足」でも「食べ過ぎ」でもない｜痩せる方法より先に学ぶべき「続ける技術」",
+    "url": "https://note.com/fildstraycats/n/ne9c0925d5379?magazine_key=m80cde2fde6bf",
+    "image": "https://assets.st-note.com/production/uploads/images/319250412/rectangle_large_type_2_f00f7fed819493632ced028e59abf137.png?width=1280",
+    "author": "小澤　政嗣＠ふぃる",
+    "date": "2026年9月30日 10:24",
+    "tags": []
+},
+    
+    {
     "title": "計画性も準備も",
     "url": "https://note.com/akyd/n/n013558160c99?magazine_key=m80cde2fde6bf",
     "image": "https://assets.st-note.com/production/uploads/images/316825621/rectangle_large_type_2_cdaeefd86a214fc0b37bbef9bec6e7ac.png?width=1280",

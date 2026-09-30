@@ -811,6 +811,7 @@
                 <a href="#bath"><i class="fa-solid fa-hot-tub-person"></i> 温泉・入浴時間</a>
                 <a href="#facility"><i class="fa-solid fa-house-chimney"></i> 館内・客室設備</a>
                 <a href="#rules"><i class="fa-solid fa-utensils"></i> 飲食・心得</a>
+                <a href="#fee"><i class="fa-solid fa-yen-sign"></i> 費用・支払</a>
                 <a href="#checklist"><i class="fa-solid fa-list-check"></i> 持ち物</a>
             </nav>
         </div>
@@ -892,8 +893,8 @@
                         <div class="timeline-icon"><i class="fa-regular fa-sun"></i></div>
                         <div class="timeline-card">
                             <span class="timeline-time"><i class="fa-regular fa-clock"></i> 10月4日（日）［2日目］〜 10:00</span>
-                            <h3 class="timeline-title">各自朝食 & チェックアウト</h3>
-                            <p class="timeline-desc">朝食は各自ご用意いただいたものを自由に召し上がってください。10:00 完全チェックアウトとなります。</p>
+                            <h3 class="timeline-title">各自朝食 ＆ 費用精算 ＆ チェックアウト</h3>
+                            <p class="timeline-desc">朝食は各自ご用意いただいたものを自由に召し上がってください。朝に合宿費用の集金（現金またはPayPay）を行います。10:00 完全チェックアウトとなります。</p>
                         </div>
                     </div>
                 </div>
@@ -1181,6 +1182,75 @@
             </div>
         </section>
 
+        <!-- 参加費用・お支払い -->
+        <section id="fee">
+            <div class="section-header">
+                <span class="section-tag">Fee & Payment</span>
+                <h2 class="section-title">参加費用・お支払い</h2>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--primary);">
+                <!-- 合計目安表示 -->
+                <div style="text-align: center; margin-bottom: 1.75rem; background: var(--primary-light); padding: 1.5rem; border-radius: var(--radius-md);">
+                    <span style="font-size: 0.9rem; color: var(--primary-dark); font-weight: 700;">1人あたりの費用合計目安</span>
+                    <div style="font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--navy); line-height: 1.2; margin: 4px 0;">
+                        約 ¥11,700 〜 ¥12,000
+                    </div>
+                    <span style="font-size: 0.8rem; color: var(--text-sub);">※BBQの実費や端数調整により多少前後する場合がございます</span>
+                </div>
+
+                <!-- 内訳カード -->
+                <div style="display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                    <!-- 宿泊費 -->
+                    <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                        <div>
+                            <div style="font-weight: 700; color: var(--navy); font-size: 1.05rem;">
+                                <i class="fa-solid fa-hotel" style="color: var(--primary); margin-right: 6px;"></i> 宿泊費（1棟貸切り）
+                            </div>
+                            <div style="font-size: 0.85rem; color: var(--text-sub); margin-top: 2px;">
+                                総額 ¥183,000 ÷ 参加者21名
+                            </div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span style="font-family: 'Outfit', sans-serif; font-size: 1.35rem; font-weight: 800; color: var(--primary-dark);">
+                                約 ¥8,715
+                            </span>
+                            <span style="font-size: 0.8rem; color: var(--text-sub);"> /人</span>
+                        </div>
+                    </div>
+
+                    <!-- BBQ費用 -->
+                    <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                        <div>
+                            <div style="font-weight: 700; color: var(--navy); font-size: 1.05rem;">
+                                <i class="fa-solid fa-fire-burner" style="color: var(--accent); margin-right: 6px;"></i> バーベキュー（夕食）
+                            </div>
+                            <div style="font-size: 0.85rem; color: var(--text-sub); margin-top: 2px;">
+                                食材・BBQ機材等の実費
+                            </div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span style="font-family: 'Outfit', sans-serif; font-size: 1.35rem; font-weight: 800; color: var(--accent);">
+                                約 ¥3,000
+                            </span>
+                            <span style="font-size: 0.8rem; color: var(--text-sub);"> 程度/人</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- お支払い方法・時期案内 -->
+                <div style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%); border: 1.5px solid #86efac; border-radius: var(--radius-md); padding: 1.25rem;">
+                    <div style="font-weight: 800; color: #166534; font-size: 1.05rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 8px;">
+                        <i class="fa-solid fa-wallet"></i> お支払い方法 ＆ タイミング
+                    </div>
+                    <ul style="font-size: 0.92rem; color: #14532d; padding-left: 1.25rem; line-height: 1.8;">
+                        <li><strong>お支払いのタイミング：</strong> <strong>2日目の朝（チェックアウト前）</strong>に集金いたします。</li>
+                        <li><strong>ご利用可能な決済方法：</strong> <strong>現金</strong> または <strong>PayPay（ペイペイ）</strong> にてお支払いいただけます。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- 持ち物チェックリスト -->
         <section id="checklist">
             <div class="section-header">
@@ -1219,6 +1289,7 @@
     <script>
         // 持ち物リスト定義
         const defaultChecklist = [
+            { id: 'item-fee', text: '合宿費用（現金 または PayPay残高：約1.2万円）', checked: false },
             { id: 'item-1', text: '着替え・下着・パジャマ', checked: false },
             { id: 'item-2', text: 'スマホ・PC・充電器・モバイルバッテリー', checked: false },
             { id: 'item-3', text: '2日目の朝食（おにぎり・パンなど）', checked: false },
@@ -1232,8 +1303,18 @@
         // チェックリストの初期化 & LocalStorage対応
         function initChecklist() {
             const container = document.getElementById('checklistContainer');
-            const saved = localStorage.getItem('camp2026_checklist');
-            const items = saved ? JSON.parse(saved) : defaultChecklist;
+            const saved = localStorage.getItem('camp2026_checklist_v2') || localStorage.getItem('camp2026_checklist');
+            let items = defaultChecklist;
+            if (saved) {
+                try {
+                    const parsed = JSON.parse(saved);
+                    // defaultChecklistの全項目をベースに保存されたチェック状態を復元
+                    items = defaultChecklist.map(def => {
+                        const found = parsed.find(p => p.id === def.id || p.text === def.text);
+                        return found ? { ...def, checked: found.checked } : def;
+                    });
+                } catch(e) {}
+            }
 
             container.innerHTML = '';
             items.forEach((item, index) => {
@@ -1252,7 +1333,7 @@
                     const isChecked = div.querySelector('input').checked;
                     items[index].checked = isChecked;
                     div.classList.toggle('done', isChecked);
-                    localStorage.setItem('camp2026_checklist', JSON.stringify(items));
+                    localStorage.setItem('camp2026_checklist_v2', JSON.stringify(items));
                 });
 
                 container.appendChild(div);

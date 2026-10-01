@@ -533,6 +533,132 @@ a:hover {
     font-size: 14px;
 }
 
+/* Compact Recent Articles Section */
+.recent-articles-section {
+    margin-bottom: 50px;
+}
+
+.explore-section {
+    margin-top: 10px;
+}
+
+.recent-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.mini-article-card {
+    background-color: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.mini-article-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(141, 163, 153, 0.2);
+}
+
+.mini-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.mini-img-container {
+    height: 110px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.mini-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.mini-article-card:hover .mini-card-img {
+    transform: scale(1.06);
+}
+
+.mini-cat-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: var(--color-header);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mini-cat-badge:hover {
+    background-color: var(--color-header);
+    color: white;
+}
+
+.mini-card-body {
+    padding: 10px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.mini-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.45;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: color 0.2s;
+}
+
+.mini-article-card:hover .mini-card-title {
+    color: var(--color-header);
+}
+
+.mini-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: #999;
+}
+
+.mini-card-author {
+    color: var(--color-link-hover);
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 110px;
+}
+
+.mini-card-date {
+    font-size: 11px;
+    color: #aaa;
+    white-space: nowrap;
+}
+
 /* Grid & Cards */
 .amazon-grid {
     display: grid;
@@ -1011,6 +1137,29 @@ a:hover {
     .filter-status-info {
         flex-direction: column;
         gap: 4px;
+    }
+
+    /* Compact recent articles on mobile: 2-column clean grid */
+    .recent-mini-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .mini-img-container {
+        height: 95px;
+    }
+
+    .mini-card-title {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .mini-card-meta {
+        font-size: 10px;
+    }
+
+    .mini-card-body {
+        padding: 8px 10px 10px;
     }
 
     /* Footer */

@@ -13,11 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize UI components
     renderRecommendation();
+    renderRecentArticles(); // Compact recent articles
     renderCategories();
     renderTagCloud();
     renderSidebar(authorsList);
 
-    // Initial render: all articles
+    // Initial render: all articles for explore section
     filteredArticles = articles;
     renderArticles();
 
@@ -209,6 +210,42 @@ function resetFilter() {
     updateUI();
 }
 
+// --- Compact Recent Articles Section ---
+function renderRecentArticles() {
+    const grid = document.getElementById('recent-articles-grid');
+    if (!grid) return;
+
+    // Take top 8 latest articles
+    const recentList = articles.slice(0, 8);
+    grid.innerHTML = '';
+
+    recentList.forEach(article => {
+        const card = document.createElement('div');
+        card.className = 'mini-article-card';
+
+        const categoryBadge = article.category 
+            ? `<span class="mini-cat-badge" onclick="event.stopPropagation(); filterByCategory('${escapeHtml(article.category)}')">${escapeHtml(article.category)}</span>`
+            : '';
+
+        card.innerHTML = `
+            <a href="${article.url}" target="_blank" class="mini-card-link">
+                <div class="mini-img-container">
+                    <img src="${article.image || 'hero_bg.png'}" alt="${escapeHtml(article.title)}" class="mini-card-img" loading="lazy">
+                    ${categoryBadge}
+                </div>
+                <div class="mini-card-body">
+                    <h3 class="mini-card-title">${escapeHtml(article.title)}</h3>
+                    <div class="mini-card-meta">
+                        <span class="mini-card-author">${escapeHtml(article.author)}</span>
+                        <span class="mini-card-date">${article.date ? article.date.split(' ')[0] : ''}</span>
+                    </div>
+                </div>
+            </a>
+        `;
+        grid.appendChild(card);
+    });
+}
+
 function updateUI() {
     renderCategories();
     renderTagCloud();
@@ -224,7 +261,7 @@ function updateUI() {
 
     if (currentFilter.type === 'all') {
         if (filterBar) filterBar.style.display = 'none';
-        if (titleEl) titleEl.textContent = '最近の記事';
+        if (titleEl) titleEl.textContent = 'テーマ・内容別に探す';
         if (subtitleEl) subtitleEl.textContent = `全 ${articles.length} 件`;
     } else {
         if (filterBar) filterBar.style.display = 'flex';

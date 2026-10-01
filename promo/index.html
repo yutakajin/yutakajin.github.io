@@ -69,35 +69,49 @@
                 <!-- Injected by JS -->
             </section>
 
-            <!-- Category & Content Filter Section -->
-            <section class="category-nav-section">
-                <div class="category-tabs" id="category-tabs">
+            <!-- Compact Recent Articles Section -->
+            <section class="recent-articles-section">
+                <div class="results-header">
+                    <h2>最近の記事</h2>
+                    <span class="results-count">New Articles</span>
+                </div>
+                <div id="recent-articles-grid" class="recent-mini-grid">
+                    <!-- Injected by JS (Compact Recent Cards) -->
+                </div>
+            </section>
+
+            <!-- Explore by Content / Topic Section -->
+            <section class="explore-section">
+                <div class="results-header">
+                    <h2 id="results-title">テーマ・内容別に探す</h2>
+                    <span class="results-count" id="results-subtitle">Explore Articles</span>
+                </div>
+
+                <!-- Category & Content Filter Section -->
+                <div class="category-nav-section">
+                    <div class="category-tabs" id="category-tabs">
+                        <!-- Injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Active Filter Bar -->
+                <div id="active-filter-bar" class="active-filter-bar" style="display: none;">
+                    <div class="filter-status-info">
+                        <span id="active-filter-label" class="active-filter-label"></span>
+                        <span id="active-filter-count" class="active-filter-count"></span>
+                    </div>
+                    <button id="reset-filter-btn" class="reset-filter-btn" type="button">✕ 絞り込み解除</button>
+                </div>
+
+                <div id="articles-grid" class="amazon-grid">
                     <!-- Injected by JS -->
                 </div>
-            </section>
 
-            <!-- Active Filter Bar -->
-            <div id="active-filter-bar" class="active-filter-bar" style="display: none;">
-                <div class="filter-status-info">
-                    <span id="active-filter-label" class="active-filter-label"></span>
-                    <span id="active-filter-count" class="active-filter-count"></span>
+                <!-- Load More Button -->
+                <div id="load-more-container" class="load-more-container">
+                    <button id="load-more-btn" class="load-more-btn" type="button">もっと記事を見る（残り <span id="remaining-count">0</span> 件）</button>
                 </div>
-                <button id="reset-filter-btn" class="reset-filter-btn" type="button">✕ 絞り込み解除</button>
-            </div>
-
-            <section class="results-header">
-                <h2 id="results-title">最近の記事</h2>
-                <span class="results-count" id="results-subtitle">All Articles</span>
             </section>
-
-            <div id="articles-grid" class="amazon-grid">
-                <!-- Injected by JS -->
-            </div>
-
-            <!-- Load More Button -->
-            <div id="load-more-container" class="load-more-container">
-                <button id="load-more-btn" class="load-more-btn" type="button">もっと記事を見る（残り <span id="remaining-count">0</span> 件）</button>
-            </div>
         </main>
     </div>
 
